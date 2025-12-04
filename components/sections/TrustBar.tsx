@@ -1,31 +1,67 @@
 import React from 'react';
 import { FadeIn } from '../common/FadeIn';
+import { TRUST_LOGOS } from '../../constants';
 
 export const TrustBar: React.FC = () => {
-  // Placeholder components for logos to avoid external image dependencies and ensure consistent style
-  const LogoPlaceholder = ({ width = 120, height = 40, className = "" }) => (
-    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
-      <rect x="0" y="10" width="20" height="20" rx="4" />
-      <rect x="24" y="12" width="80" height="16" rx="2" />
-    </svg>
-  );
-
-  const LogoPlaceholder2 = ({ width = 120, height = 40, className = "" }) => (
-    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
-      <circle cx="15" cy="20" r="10" />
-      <rect x="35" y="12" width="70" height="16" rx="2" />
-    </svg>
-  );
-  
-  const LogoPlaceholder3 = ({ width = 120, height = 40, className = "" }) => (
-    <svg width={width} height={height} viewBox={`0 0 ${width} ${height}`} className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
-       <path d="M10 20 L20 10 L30 20 L20 30 Z" />
-       <rect x="40" y="12" width="70" height="16" rx="2" />
-    </svg>
-  );
+  // Simulating distinct logos for different industries
+  const renderLogo = (id: string, className: string) => {
+    switch (id) {
+      case 'l1': // Holding (Geometric/Solid)
+        return (
+          <svg width="120" height="40" viewBox="0 0 120 40" className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
+             <path d="M10 10 L30 10 L30 30 L10 30 Z" />
+             <path d="M35 10 L55 10 L55 30 L35 30 Z" />
+             <rect x="65" y="16" width="50" height="8" rx="1" />
+          </svg>
+        );
+      case 'l2': // Finance (Stability/Pillars)
+        return (
+           <svg width="120" height="40" viewBox="0 0 120 40" className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
+             <rect x="5" y="28" width="40" height="4" />
+             <rect x="10" y="12" width="6" height="16" />
+             <rect x="22" y="12" width="6" height="16" />
+             <rect x="34" y="12" width="6" height="16" />
+             <path d="M25 4 L48 12 L2 12 Z" />
+             <rect x="55" y="14" width="60" height="10" rx="2" />
+          </svg>
+        );
+      case 'l3': // Construction (Structure)
+        return (
+           <svg width="120" height="40" viewBox="0 0 120 40" className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
+             <path d="M10 30 L10 10 L30 30 Z" />
+             <rect x="35" y="14" width="70" height="12" rx="0" />
+          </svg>
+        );
+      case 'l4': // Tech (Nodes/Connections)
+        return (
+           <svg width="120" height="40" viewBox="0 0 120 40" className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
+             <circle cx="10" cy="20" r="6" />
+             <circle cx="35" cy="10" r="4" />
+             <circle cx="35" cy="30" r="4" />
+             <line x1="16" y1="20" x2="31" y2="10" stroke="currentColor" strokeWidth="2" />
+             <line x1="16" y1="20" x2="31" y2="30" stroke="currentColor" strokeWidth="2" />
+             <rect x="50" y="16" width="60" height="8" rx="4" />
+          </svg>
+        );
+      case 'l5': // Retail (Cart/Bag/Simple)
+        return (
+           <svg width="120" height="40" viewBox="0 0 120 40" className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
+             <path d="M10 10 C10 10, 15 30, 25 30 C35 30, 40 10, 40 10" fill="none" stroke="currentColor" strokeWidth="3" />
+             <rect x="50" y="14" width="60" height="10" rx="2" />
+          </svg>
+        );
+      default:
+        return (
+          <svg width="120" height="40" viewBox="0 0 120 40" className={`fill-current ${className}`} xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="8" width="24" height="24" rx="4" />
+            <rect x="32" y="14" width="80" height="12" rx="2" />
+          </svg>
+        );
+    }
+  };
 
   return (
-    <section id="trust-bar" className="bg-white border-b border-slate-100 py-16">
+    <section id="trust-bar" className="bg-white border-b border-slate-100 py-16" aria-label="Client Logos">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <FadeIn>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16">
@@ -33,12 +69,20 @@ export const TrustBar: React.FC = () => {
               Global İş Ortaklarımız
             </p>
             <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center justify-items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-               {/* Using varied SVG placeholders to simulate real logos */}
-               <LogoPlaceholder className="text-slate-800 hover:text-primary transition-colors h-8 w-auto" />
-               <LogoPlaceholder2 className="text-slate-800 hover:text-primary transition-colors h-8 w-auto" />
-               <LogoPlaceholder3 className="text-slate-800 hover:text-primary transition-colors h-8 w-auto" />
-               <LogoPlaceholder className="text-slate-800 hover:text-primary transition-colors h-8 w-auto" />
-               <LogoPlaceholder2 className="text-slate-800 hover:text-primary transition-colors h-8 w-auto" />
+               {TRUST_LOGOS.map((logo) => (
+                 <div key={logo.id} className="group relative flex justify-center w-full cursor-default" title={logo.alt}>
+                    {renderLogo(logo.id, "text-slate-800 group-hover:text-primary transition-colors h-8 w-auto")}
+                    
+                    {/* Tooltip for Sector */}
+                    <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
+                       <span className="text-[10px] font-bold text-secondary bg-white border border-slate-100 px-2 py-1 rounded shadow-sm">
+                         {logo.sector}
+                       </span>
+                    </div>
+
+                    <span className="sr-only">{logo.name} - {logo.sector}</span>
+                 </div>
+               ))}
             </div>
           </div>
         </FadeIn>

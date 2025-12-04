@@ -35,16 +35,16 @@ export const Navbar: React.FC = () => {
         <div className="hidden lg:flex items-center space-x-10 xl:space-x-12">
           {NAV_ITEMS.map((item) => (
             <div 
-              key={item.label} 
+              key={item.id} 
               className="relative group h-full flex items-center"
-              onMouseEnter={() => item.children && setActiveDropdown(item.label)}
+              onMouseEnter={() => item.children && setActiveDropdown(item.id)}
               onMouseLeave={() => item.children && setActiveDropdown(null)}
             >
               <a
                 href={item.href}
                 className="text-sm font-medium text-slate-600 hover:text-primary transition-colors flex items-center gap-1 py-4 uppercase tracking-wide"
               >
-                {item.label}
+                {item.label.tr}
                 {item.children && (
                   <ChevronDown size={14} className="group-hover:text-secondary transition-colors" />
                 )}
@@ -56,16 +56,16 @@ export const Navbar: React.FC = () => {
               {/* Dropdown Menu */}
               {item.children && (
                 <div className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 w-72 transition-all duration-300 transform origin-top ${
-                  activeDropdown === item.label ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'
+                  activeDropdown === item.id ? 'opacity-100 scale-100 visible' : 'opacity-0 scale-95 invisible'
                 }`}>
                   <div className="bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden py-2">
                     {item.children.map((child) => (
                       <a
-                        key={child.label}
+                        key={child.id}
                         href={child.href}
                         className="block px-6 py-3 text-sm text-slate-600 hover:text-primary hover:bg-slate-50 transition-colors font-medium border-l-2 border-transparent hover:border-secondary"
                       >
-                        {child.label}
+                        {child.label.tr}
                       </a>
                     ))}
                   </div>
@@ -99,21 +99,21 @@ export const Navbar: React.FC = () => {
       <div className={`fixed inset-0 bg-white z-40 lg:hidden transition-transform duration-500 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex flex-col h-full pt-32 px-8 pb-10 overflow-y-auto">
            {NAV_ITEMS.map((item) => (
-              <div key={item.label} className="mb-6">
+              <div key={item.id} className="mb-6">
                 {item.children ? (
                   <div className="space-y-4">
                     <span className="block text-2xl font-serif font-bold text-primary pb-2 border-b border-slate-100">
-                      {item.label}
+                      {item.label.tr}
                     </span>
                     <div className="pl-4 space-y-3 border-l-2 border-slate-100 ml-2">
                       {item.children.map((child) => (
                         <a
-                          key={child.label}
+                          key={child.id}
                           href={child.href}
                           className="block text-base font-medium text-slate-600 hover:text-secondary"
                           onClick={() => setIsOpen(false)}
                         >
-                          {child.label}
+                          {child.label.tr}
                         </a>
                       ))}
                     </div>
@@ -124,7 +124,7 @@ export const Navbar: React.FC = () => {
                     className="block text-2xl font-serif font-bold text-slate-800 hover:text-secondary pb-2 border-b border-slate-100"
                     onClick={() => setIsOpen(false)}
                   >
-                    {item.label}
+                    {item.label.tr}
                   </a>
                 )}
               </div>

@@ -1,10 +1,16 @@
+
 import React from 'react';
-import { CASE_STUDIES } from '../../constants';
+import { CASE_STUDIES, FALLBACK_MESSAGES } from '../../constants';
 import { FadeIn } from '../common/FadeIn';
+import { trackEvent } from '../../lib/analytics';
 
 export const SuccessStories: React.FC = () => {
+  if (!CASE_STUDIES || CASE_STUDIES.length === 0) {
+    return null;
+  }
+
   return (
-    <section id="cases" className="py-24 lg:py-32 bg-white">
+    <section id="success-stories" className="py-24 lg:py-32 bg-white" aria-labelledby="cases-heading">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <FadeIn>
           <div className="mb-20 flex flex-col md:flex-row justify-between items-end border-b border-slate-100 pb-8">
@@ -12,7 +18,7 @@ export const SuccessStories: React.FC = () => {
                <span className="text-secondary font-bold uppercase tracking-widest text-xs mb-4 block">
                  Referans Projeler
                </span>
-               <h2 className="text-h2-d font-serif font-bold text-primary mb-4">
+               <h2 id="cases-heading" className="text-h2-d font-serif font-bold text-primary mb-4">
                 Başarı Hikayeleri
               </h2>
                <p className="text-slate-600 font-light text-lg max-w-xl">
@@ -28,7 +34,10 @@ export const SuccessStories: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {CASE_STUDIES.map((study, idx) => (
             <FadeIn key={study.id} delay={idx * 150}>
-              <div className="group cursor-pointer h-full flex flex-col border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-slate-200 transition-all duration-500 hover:-translate-y-1">
+              <article 
+                className="group cursor-pointer h-full flex flex-col border border-slate-100 rounded-2xl overflow-hidden hover:shadow-xl hover:shadow-slate-200 transition-all duration-500 hover:-translate-y-1"
+                onClick={() => trackEvent('CaseStudy', 'Click', study.client)}
+              >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <img
                     src={study.image}
@@ -45,25 +54,37 @@ export const SuccessStories: React.FC = () => {
                 </div>
                 
                 <div className="p-8 flex flex-col flex-grow bg-white">
-                  <div className="text-3xl font-serif font-bold text-secondary mb-2">
-                    {study.result}
+                  <div className="mb-4">
+                    <h3 className="text-lg font-bold text-primary mb-1 group-hover:text-secondary transition-colors">
+                      {study.client}
+                    </h3>
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
+                       {study.category}
+                    </span>
                   </div>
-                  <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
-                    {study.client}
-                  </h3>
-                  <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
-                     {study.category}
+
+                  <div className="space-y-4 mb-6">
+                    <div>
+                      <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Problem</h4>
+                      <p className="text-slate-600 text-sm font-light leading-snug line-clamp-2" title={study.challenge}>{study.challenge}</p>
+                    </div>
+                    <div>
+                      <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Çözüm</h4>
+                      <p className="text-slate-600 text-sm font-light leading-snug line-clamp-2" title={study.solution}>{study.solution}</p>
+                    </div>
                   </div>
-                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
-                    {study.description}
-                  </p>
+
                   <div className="mt-auto pt-4 border-t border-slate-50">
-                    <span className="inline-flex items-center text-xs font-bold text-primary uppercase tracking-wider group-hover:ml-2 transition-all duration-300">
-                      Projeyi İncele <span className="ml-2">→</span>
+                     <h4 className="text-[10px] font-bold text-secondary uppercase tracking-wider mb-1">Sonuç</h4>
+                    <div className="text-2xl font-serif font-bold text-primary group-hover:text-secondary transition-colors">
+                      {study.result}
+                    </div>
+                    <span className="inline-flex items-center text-xs font-bold text-primary uppercase tracking-wider mt-4 group-hover:ml-2 transition-all duration-300">
+                      Detaylar <span className="ml-2">→</span>
                     </span>
                   </div>
                 </div>
-              </div>
+              </article>
             </FadeIn>
           ))}
         </div>

@@ -1,14 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="tr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>EcyPro | Premium Kurumsal Danışmanlık</title>
-    <meta name="description" content="Global ölçekte stratejik büyüme ve dijital dönüşüm ortağınız." />
+    <title>EcyPro | Stratejik Yönetim ve Dijital Dönüşüm Danışmanlığı</title>
+    <meta name="description" content="EcyPro, kurumsal yönetim danışmanlığı, etkinlik yönetimi ve dijital marka çözümleriyle işinizi büyütür. Global standartlarda stratejik iş ortağınız." />
+    <meta name="keywords" content="Yönetim Danışmanlığı, Kurumsal Etkinlik, Dijital Pazarlama, Stratejik Planlama, İnsan Kaynakları" />
+    <meta name="author" content="EcyPro Danışmanlık A.Ş." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ecypro.com/" />
+    <meta property="og:title" content="EcyPro | Premium Kurumsal Danışmanlık" />
+    <meta property="og:description" content="Global ölçekte stratejik büyüme ve dijital dönüşüm ortağınız. Yönetim, etkinlik ve dijital çözümler." />
+    <meta property="og:image" content="https://www.ecypro.com/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.ecypro.com/" />
+    <meta property="twitter:title" content="EcyPro | Premium Kurumsal Danışmanlık" />
+    <meta property="twitter:description" content="Global ölçekte stratejik büyüme ve dijital dönüşüm ortağınız." />
+    <meta property="twitter:image" content="https://www.ecypro.com/og-image.jpg" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Consultant",
+      "name": "EcyPro Danışmanlık",
+      "url": "https://www.ecypro.com",
+      "logo": "https://www.ecypro.com/logo.png",
+      "sameAs": [
+        "https://www.linkedin.com/company/ecypro",
+        "https://twitter.com/ecypro",
+        "https://www.instagram.com/ecypro"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Büyükdere Cad. No:123",
+        "addressLocality": "Levent",
+        "addressRegion": "İstanbul",
+        "postalCode": "34394",
+        "addressCountry": "TR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+90-212-555-0123",
+        "contactType": "customer service"
+      }
+    }
+    </script>
+
     <script>
       tailwind.config = {
         theme: {
@@ -57,6 +105,20 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+      /* Skip link styling */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #D97706;
+        color: white;
+        padding: 8px;
+        z-index: 100;
+        transition: top 0.3s;
+      }
+      .skip-link:focus {
+        top: 0;
+      }
     </style>
   <script type="importmap">
 {
@@ -71,6 +133,7 @@
 </script>
 </head>
   <body class="bg-neutral text-slate-900 font-sans">
+    <a href="#main-content" class="skip-link">Ana içeriğe geç</a>
     <div id="root"></div>
   </body>
 </html>

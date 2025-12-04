@@ -1,3 +1,4 @@
+
 import React, { useEffect, useRef, useState } from 'react';
 
 interface FadeInProps {
@@ -9,13 +10,21 @@ interface FadeInProps {
 export const FadeIn: React.FC<FadeInProps> = ({ children, delay = 0, className = '' }) => {
   const [isVisible, setIsVisible] = useState(false);
   const domRef = useRef<HTMLDivElement>(null);
+  
+  // Check for reduced motion preference
+  const prefersReducedMotion = typeof window !== 'undefined' && 
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   useEffect(() => {
+    if (prefersReducedMotion) {
+      setIsVisible(true);
+      return;
+    }
+
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          // Once visible, we can stop observing to perform "once: true" behavior
           if (domRef.current) observer.unobserve(domRef.current);
         }
       });
@@ -31,19 +40,22 @@ export const FadeIn: React.FC<FadeInProps> = ({ children, delay = 0, className =
         observer.unobserve(currentElement);
       }
     };
-  }, []);
+  }, [prefersReducedMotion]);
 
-  // Calculate delay style
-  const style = {
+  const style = prefersReducedMotion ? {} : {
     transitionDelay: `${delay}ms`,
   };
+
+  const animationClasses = prefersReducedMotion
+    ? 'opacity-100'
+    : `transition-all duration-700 ease-out transform ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      }`;
 
   return (
     <div
       ref={domRef}
-      className={`transition-all duration-700 ease-out transform ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-      } ${className}`}
+      className={`${animationClasses} ${className}`}
       style={style}
     >
       {children}
