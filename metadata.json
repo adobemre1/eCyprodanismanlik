@@ -1,230 +1,232 @@
 {
-  "name": "EcyPro Premium Consulting",
-  "description": "A high-end, corporate consulting web application designed with a premium aesthetic, featuring smooth animations and a trustworthy design system.",
-  "requestFramePermissions": [],
+  "project": {
+    "name": "EcyPro Premium Consulting – E2E Geliştirme",
+    "goal": "Mevcut tek sayfalık premium kurumsal siteyi; kod mimarisi, klasör yapısı, performans, erişilebilirlik, SEO, içerik yönetimi, form entegrasyonları, analitik ve test süreçleri dahil uçtan uca olgun bir kurumsal ürün haline getirmek.",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Vite/CRA benzeri bundler",
+      "TailwindCSS"
+    ],
+    "current_files": [
+      "index.html",
+      "index.tsx",
+      "App.tsx",
+      "metadata.json",
+      "types.ts",
+      "constants.ts",
+      "components/Navbar.tsx",
+      "components/Hero.tsx",
+      "components/TrustBar.tsx",
+      "components/ValueProp.tsx",
+      "components/Services.tsx",
+      "components/KPI.tsx",
+      "components/SuccessStories.tsx",
+      "components/Insights.tsx",
+      "components/Contact.tsx",
+      "components/Footer.tsx",
+      "components/CookieBanner.tsx",
+      "components/FadeIn.tsx"
+    ],
+    "constraints": [
+      "Varolan premium tasarım dili ve eCyPro.com hizmet mimarisi korunacak.",
+      "Tüm geliştirmeler performans, erişilebilirlik ve bakım kolaylığı önceliğiyle yapılacak.",
+      "Kod yapısı anlaşılır klasör hiyerarşisi ile organize edilecek.",
+      "Tüm değişiklikler mobil ve masaüstü için tam duyarlı (responsive) çalışacak."
+    ]
+  },
+  "instructions_for_agent": "Aşağıdaki 'todos' dizisindeki görevleri ID sırasına göre yerine getir. Her görevde belirtilen dosyaları aç, gerekirse yeni klasörler/dosyalar oluştur ve açıklanan geliştirmeleri uygula. Her görev sonunda acceptance_criteria maddelerinin sağlandığından emin ol. Gerektiğinde yardımcı util, hook veya config dosyaları için yeni klasörler (ör. hooks/, lib/, utils/, styles/, tests/) oluşturabilirsin.",
   "todos": [
     {
-      "id": "ARCH-01",
+      "id": "ARCH-STRUCTURE-01",
       "area": "architecture",
-      "title": "Hizmet Mimarisi – 3 Ana Kategoriye Ayrıştırma",
-      "description": "Tüm hizmetleri eCyPro.com'daki gerçek yapıya göre 3 ana kategoriye ayır: Danışmanlık, Etkinlik & Organizasyon, Dijital Dünya & Sosyal Medya.",
+      "title": "Klasör ve Dosya Mimarisi – Core Yapıyı Organize Et",
+      "description": "Bileşenleri daha okunabilir bir yapıya ayırmak için yeni klasör hiyerarşisi tanımla ve uygula.",
       "steps": [
-        "constants.ts içerisindeki SERVICES yapısını 3 kategoriye böl.",
-        "Her kategoride kendi alt hizmetlerini tanımla.",
-        "Navbar ve Footer bu yeni mimariye göre güncellensin."
+        "components klasörü içinde alt klasörler oluştur: components/layout, components/sections, components/common.",
+        "Navbar, Footer, CookieBanner, Contact gibi site çerçevesi bileşenlerini components/layout altına taşı.",
+        "Hero, TrustBar, ValueProp, Services, KPI, SuccessStories, Insights gibi içerik bölümlerini components/sections altına taşı.",
+        "Button, Badge, IconWrapper, Card benzeri yeniden kullanılabilir küçük bileşenleri components/common altına çıkart.",
+        "App.tsx dosyasını yeni klasör yapısına göre import path'leriyle güncelle."
       ],
       "acceptance_criteria": [
-        "Hizmetler artık 3 ana kategoriye ayrılmış durumda.",
-        "kategori başlıkları hem Navbar hem Services.tsx hem Footer’da uyumlu."
+        "Tüm ana bölümler layout/sections/common altına mantıklı şekilde ayrılmış.",
+        "App.tsx sadece layout ve section bileşenlerini toplayan sade bir kompozisyon dosyası haline gelmiş.",
+        "Import path'lerinde hata yok, proje derlenip çalışıyor."
       ]
     },
     {
-      "id": "NAV-01",
-      "area": "navbar",
-      "title": "Premium Navbar + Dropdown Hizmet Menüsü",
-      "description": "Hizmetler menüsünü global danışmanlık firmalarındaki gibi dropdown’a çevir.",
+      "id": "ARCH-TYPES-02",
+      "area": "types",
+      "title": "Tip Tanımlarını Güçlendir ve Ortaklaştır",
+      "description": "types.ts dosyasını genişleterek constants.ts ve bileşenler arasında güçlü tip güvenliği sağla.",
       "steps": [
-        "Hizmetler butonuna hover/onclick dropdown ekle.",
-        "Alt kategori olarak: Danışmanlık, Etkinlik & Organizasyon, Dijital Dünya & Sosyal Medya.",
-        "Danışmanlık altına tekrar 6 alt hizmet yerleştir.",
-        "Navbar spacing min 32px olacak şekilde genişlet.",
-        "Aktif link highlight eklenecek.",
-        "Scroll sonrası backdrop-blur uygulanacak."
+        "Hizmet kategorileri, hizmet kartları, KPI istatistikleri, başarı hikayeleri ve blog girdileri için ayrı TypeScript interface/typename'leri tanımla.",
+        "constants.ts dosyasını bu tipleri kullanacak şekilde güncelle.",
+        "Services, KPI, SuccessStories, Insights bileşenlerinde props ve map edilen verileri tanımladığın tiplerle ilişkilendir.",
+        "Gerekirse 'SharedSectionProps' veya benzeri ortak prop tipleri ekle."
       ],
       "acceptance_criteria": [
-        "Dropdown menüsü çalışıyor.",
-        "Tüm alt hizmetler erişilebilir.",
-        "Kurumsal spacing düzenli."
+        "types.ts içeriği proje genelinde kullanılan ana veri modellerini kapsıyor.",
+        "constants.ts ve ilgili bileşenlerde any tipi kullanılmıyor.",
+        "TypeScript derleyicisi tip hatası vermiyor."
       ]
     },
     {
-      "id": "HERO-01",
-      "area": "hero",
-      "title": "Hero Tagline + Premium Pattern",
-      "description": "Hero alanına premium kurumsal his veren abstract pattern ekle, sloganı güçlendir.",
+      "id": "ROUTING-01",
+      "area": "routing",
+      "title": "Tek Sayfa İçinde Anchor Bazlı Router / Section Navigasyonu",
+      "description": "Navbar linklerinin her section'a düzgün kaydırma (smooth scroll) ile gitmesini sağla ve ID yapısını standardize et.",
       "steps": [
-        "Arka plana düşük opaklıklı soyut pattern ekle.",
-        "Yeni tagline: 'Strateji, Etkinlik ve Dijital Çözümlerde Güvenilir Partneriniz'.",
-        "CTA butonlarını SOLID + OUTLINE olarak hiyerarşik düzenle.",
-        "Hero typography: Desktop 56–64px, Mobile 32–36px."
+        "Her section bileşenine (Hero, Services, Insights, Contact vb.) semantik <section> ve benzersiz id (ör. 'hero', 'services', 'insights', 'contact') ekle.",
+        "Navbar linklerini bu id'lere giden anchor veya programatik scrollTo logic ile bağla.",
+        "Gerekirse common/useScrollToSection hook'u oluştur ve Navbar + CTA butonlarında kullan.",
+        "Scroll sonrası active state için bölüme göre aktif menü linkini değiştiren basit bir intersection observer mekanizması ekle."
       ],
       "acceptance_criteria": [
-        "Hero kurumsal ve premium bir görünüme kavuştu.",
-        "CTA hiyerarşisi net."
+        "Navbar linkleri tıklandığında doğru bölüme yumuşak kaydırma yapıyor.",
+        "Aktif bölüm, Navbar'da görsel olarak vurgulanıyor.",
+        "Çift ID veya kırık anchor yok."
       ]
     },
     {
-      "id": "TRUST-01",
-      "area": "trust_bar",
-      "title": "Referans Logoları (Client Strip)",
-      "description": "Hero altına global firmaların logolarını içeren bir güven bandı ekle.",
+      "id": "A11Y-01",
+      "area": "accessibility",
+      "title": "Erişilebilirlik (A11y) İyileştirmeleri",
+      "description": "Siteyi ekran okuyucu ve klavye kullanıcıları için daha erişilebilir hale getir.",
       "steps": [
-        "5–8 adet grayscale logo ekle.",
-        "Hover’da opacity artışı ve renklendirme yapılabilir.",
-        "Mobilde yatay scroll veya grid yapısı sağla."
+        "Navbar, Hero, Services, Insights, Contact, Footer gibi ana alanlara uygun ARIA role ve aria-label ekle.",
+        "Klavye ile tab gezintisini test et; tüm buton ve linklerin focus state'lerini Tailwind ile belirgin hale getir.",
+        "Skip-to-content linki ekleyerek doğrudan ana içeriğe geçiş imkanı tanı.",
+        "Form alanlarına doğru label-for/id eşleştirmelerini ve gerekli aria-describedby açıklamalarını ekle.",
+        "Renk kontrastlarını WCAG AA standardına göre kontrol et; gerekiyorsa Tailwind sınıflarını güncelle."
       ],
       "acceptance_criteria": [
-        "Güven unsuru oluşturuldu.",
-        "Logolar premium görünümde."
+        "Site sadece klavye ile gezilebilir durumda.",
+        "Ekran okuyucu ile ana bölümler mantıklı şekilde anons ediliyor.",
+        "Focus state'leri net ve tutarlı."
       ]
     },
     {
-      "id": "VALPROP-01",
-      "area": "value_proposition",
-      "title": "Değer Önerisi Bölümü (Why EcyPro)",
-      "description": "Danışmanlık firmasının stratejik değer önerilerini ikonlu 4'lü grid şeklinde açıkla.",
+      "id": "SEO-01",
+      "area": "seo",
+      "title": "Meta Etiketleri ve Yapısal Veri (SEO)",
+      "description": "Kurumsal danışmanlık sitesi için temel SEO altyapısını oluştur.",
       "steps": [
-        "4 kolonlu grid yapısı oluştur.",
-        "Başlık önerileri: Stratejik Vizyon, İnsan Odaklı Yaklaşım, Sürdürülebilir Büyüme, Dijital Dönüşüm Yetkinliği.",
-        "İkonlar minimal outline olacak."
+        "index.html içine anlamlı <title>, <meta name=\"description\"> ve og:meta etiketleri ekle (Türkçe, eCyPro odaklı).",
+        "JSON-LD formatında 'Organization' veya 'LocalBusiness' şeması ekle (logo, iletişim, url, sosyal linkler).",
+        "Ana başlıklar için H1 sadece bir kez kullanılsın; alt bölümler H2/H3 hiyerarşisine göre düzenlensin.",
+        "Insights/Blog kartlarının her birine SEO dostu alt metin ve title attribute'ları ekle (gerekirse constants.ts içinden)."
       ],
       "acceptance_criteria": [
-        "Firma felsefesi net şekilde ifade edildi.",
-        "Grid premium ve düzenli."
+        "Sayfanın başlığı ve meta açıklaması markayı, hizmetleri ve konumu net yansıtıyor.",
+        "Yapısal veri (JSON-LD) valid schema.org formatında.",
+        "Heading yapısı mantıklı bir hiyerarşi oluşturuyor."
       ]
     },
     {
-      "id": "SERV-01",
-      "area": "services",
-      "title": "Kategori Bazlı Premium Hizmet Kartları",
-      "description": "Services bölümünü üç ana kategoriye göre yeniden yapılandır.",
+      "id": "I18N-01",
+      "area": "internationalization",
+      "title": "Dil Değiştirme ve İçerik Hazırlığı (TR/EN)",
+      "description": "İleride çok dilli kullanıma hazır olacak bir altyapı oluştur (en azından TR/EN için).",
       "steps": [
-        "Kategori başlıkları büyük, kartlar alt alta.",
-        "Kart padding min 32px.",
-        "Border radius 16px.",
-        "Hover: translateY(-4px) + soft shadow.",
-        "Kartlara 'Detayları İncele →' ekle."
+        "constants.ts içeriğini language key'lerine göre (örneğin 'tr' ve 'en') gruplayacak yapı tanımla veya i18n config objesi oluştur.",
+        "Navbar'a basit bir dil seçici (TR/EN toggle) ekle.",
+        "Metin içeren bileşenleri (Hero, Services, ValueProp, KPI, SuccessStories, Insights, Footer) seçilen dile göre constants.ts üzerinden veri çekecek şekilde refaktör et.",
+        "Dil seçimini localStorage veya state ile sakla."
       ],
       "acceptance_criteria": [
-        "Kartlar premium danışmanlık tarzında.",
-        "Hizmetler kategorize ve net şekilde ayrılmış."
+        "TR/EN arasında geçiş yapılabiliyor (en içeriği placeholder/örnek bile olabilir).",
+        "Metinler bileşen içinde hard-coded değil, constants/i18n yapısından geliyor.",
+        "Dil değişimi sırasında layout bozulmuyor."
       ]
     },
     {
-      "id": "KPI-01",
-      "area": "kpi",
-      "title": "KPI Bölümünü Vurucu Hale Getir",
-      "description": "KPI (istatistik) bölümünü kurumsal danışmanlık seviyesine yükselt.",
+      "id": "FORMS-01",
+      "area": "contact_form",
+      "title": "İletişim Formu – Backend Entegrasyonu ve Hata Yönetimi",
+      "description": "Contact.tsx içindeki formu gerçek bir backend endpoint'ine hazırlayacak şekilde yapılandır.",
       "steps": [
-        "Rakam boyutu 48–60px.",
-        "Alt açıklamalar gri tonlarda.",
-        "Dikey ayraçlar veya hafif border kullanılabilir.",
-        "Grid 4 kolon (mobilde 1)."
+        "Contact form state ve validation için basit bir state yönetimi ekle (React hook form veya custom hook).",
+        "Zorunlu alanlar için client-side validation mesajları göster.",
+        "Form submit için generic bir 'lib/api.ts' veya 'lib/formSubmit.ts' fonksiyonu oluştur (şimdilik mock/fake endpoint çağrısı yapabilir).",
+        "Başarılı gönderimde kullanıcıya teşekkür mesajı ve temizlenmiş form, hatada uygun hata mesajı göster.",
+        "Form submit butonuna loading state ve disabled durumu ekle."
       ],
       "acceptance_criteria": [
-        "Rakamlar ön plana çıktı.",
-        "Düzen temiz ve kurumsal."
+        "Form yanlış doldurulduğunda kullanıcı anlamlı geri bildirim alıyor.",
+        "Başarılı gönderim akışı görsel olarak net.",
+        "Kod tarafında form logic'i Contact.tsx içinde dağınık değil, mümkün olduğunca ayrıştırılmış."
       ]
     },
     {
-      "id": "CASE-01",
-      "area": "case_studies",
-      "title": "Case Studies’i Profesyonel Forma Getir",
-      "description": "Problem → Çözüm → Sonuç akışına göre case kartları oluştur.",
+      "id": "ANALYTICS-01",
+      "area": "analytics",
+      "title": "Analitik ve Event Tracking Altyapısı",
+      "description": "Temel kullanıcı aksiyonlarını izlemek için analitik entegrasyonuna hazır bir yapı kur.",
       "steps": [
-        "3 kolonlu kart yapısı.",
-        "Sonuç yüzdeleri büyük puntoda.",
-        "Arka planda kurumsal overlay.",
-        "Tüm kartlara ince border ve düzenli spacing."
+        "lib/analytics.ts altında basit bir 'trackEvent' yardımcı fonksiyonu oluştur.",
+        "Hero CTA'ları, Hizmet kartı tıklamaları, form submit ve footer link tıklamaları için event çağrıları ekle.",
+        "Gerçek analytics (GA4 vb.) entegrasyonu yoksa, şimdilik console.log ile simüle edilebilir; ama fonksiyon imzası gerçek entegrasyonu kolaylaştıracak şekilde tasarlansın.",
+        "Gerekirse metadata.json içinde hangi eventlerin takip edildiğini açıklayan kısa bir dokümantasyon satırı ekle."
       ],
       "acceptance_criteria": [
-        "Case’ler gerçek danışmanlık formatında.",
-        "Okunabilirlik ve profesyonellik yüksek."
+        "Önemli kullanıcı aksiyonları trackEvent fonksiyonu üzerinden tek noktadan yönetiliyor.",
+        "Analytics entegrasyonu eklemek için sadece lib/analytics.ts dosyasını güncellemek yeterli.",
+        "Console veya gerçek entegrasyon ile eventler gözlemlenebilir."
       ]
     },
     {
-      "id": "INSIGHT-01",
-      "area": "insights",
-      "title": "Blog/Insights Bölümü – Akademik Görünüm",
-      "description": "McKinsey Insights tarzında profesyonel içerik listesi oluştur.",
-      "steps": [
-        "3 kolon grid.",
-        "Kategori, tarih, başlık hiyerarşisi.",
-        "Tipografi ciddi ve kurumsal.",
-        "Spacing eşit ve geniş."
-      ],
-      "acceptance_criteria": [
-        "Blog akademik bülten havasında.",
-        "Görsel gürültü yok."
-      ]
-    },
-    {
-      "id": "FOOTER-01",
-      "area": "footer",
-      "title": "Kurumsal 4 Kolon Footer",
-      "description": "Footer’ı tamamen kurumsal danışmanlık sitesi seviyesine çıkar.",
-      "steps": [
-        "Arka plan #0B1C36 (navy/dark).",
-        "4 kolon: Logo, Hizmetler, Hızlı Linkler, Bülten & İletişim.",
-        "İkonlar outline.",
-        "Tüm link yapısı eCyPro mimarisini yansıtacak."
-      ],
-      "acceptance_criteria": [
-        "Footer kurumsal ve premium.",
-        "Linkler düzenli ve okunaklı."
-      ]
-    },
-    {
-      "id": "FORM-01",
-      "area": "contact",
-      "title": "Premium İletişim Formu",
-      "description": "Form elemanları modernize edilerek premium görünüm sağlanacak.",
-      "steps": [
-        "Floating label veya belirgin label kullan.",
-        "Focus state primary renk + soft shadow.",
-        "Submit butonu geniş ve belirgin."
-      ],
-      "acceptance_criteria": [
-        "Form premium danışmanlık formu gibi görünüyor.",
-        "Focus state’ler düzgün."
-      ]
-    },
-    {
-      "id": "ANIM-01",
-      "area": "animation",
-      "title": "Scroll Reveal Animasyonları",
-      "description": "Sayfanın tüm kritik alanlarına soft fade-up animasyon ekle.",
-      "steps": [
-        "IntersectionObserver ile fade-up animasyonu tanımla.",
-        "Duration kısa (300–500ms).",
-        "once: true",
-        "Hero, ValueProp, Services, KPI, Case Studies bölümleri animasyonlu olacak."
-      ],
-      "acceptance_criteria": [
-        "Site akıcı ve modern hissettiriyor.",
-        "Performanstan ödün verilmiyor."
-      ]
-    },
-    {
-      "id": "PERF-01",
+      "id": "PERF-02",
       "area": "performance",
-      "title": "Performans Optimizasyonu",
-      "description": "WebP, lazy-loading, CSS temizlikleri ve SEO metaları uygulanacak.",
+      "title": "Bundle & Asset Optimizasyonu",
+      "description": "Daha üretim odaklı performans için ek optimizasyonlar yap.",
       "steps": [
-        "Tüm görseller WebP’ye çevrilmeli.",
-        "Lazy-loading uygulanacak.",
-        "Unused CSS purge edilecek.",
-        "Meta title + meta description eklenecek."
+        "Gerekliyse hero arka plan pattern'ini inline SVG yerine ayrı bir asset olarak kullan ya da Tailwind ile saf CSS pattern'e çevir.",
+        "Büyük görselleri boyutlandır ve modern formatlara (WebP/AVIF) dönüştür; gerekli <img> etiketlerine width/height ekle.",
+        "Tailwind üretim build'inde purging ayarlarının doğru çalıştığını doğrula (kullanılmayan class'lar temizlenmiş olmalı).",
+        "Index.html'de font yüklemeyi optimize et (preconnect/preload için uygun link etiketleri)."
       ],
       "acceptance_criteria": [
-        "Lighthouse skorları yükseldi.",
-        "Sayfa hızlı açılıyor."
+        "Lighthouse performans skoru yükselmiş.",
+        "Network tablosunda gereksiz büyük asset görülmüyor.",
+        "CLS/FID gibi metrikler olumsuz etkilenmemiş."
       ]
     },
     {
-      "id": "LEGAL-01",
-      "area": "cookie",
-      "title": "GDPR/KVKK Cookie Banner",
-      "description": "Alt kısımda premium, sade bir cookie bar göster.",
+      "id": "TEST-01",
+      "area": "testing",
+      "title": "Temel UI ve E2E Test Altyapısı",
+      "description": "Kritik bileşenler için minimal test altyapısı oluştur.",
       "steps": [
-        "Kısa metin + 'Kabul Et' + 'Ayarlar' butonları.",
-        "Arka plan düşük opaklıkta koyu renk.",
-        "Butonlar net hiyerarşili."
+        "tests/ klasörü oluştur ve Jest + Testing Library veya proje için uygun test setup'ını hazırla (AI Studio ortamına uygun minimal config).",
+        "Navbar render ve link tıklama davranışı için en az 1 unit test ekle.",
+        "Services ve Contact bileşenleri için smoke test (render without crash) yaz.",
+        "Gerekirse çok basit bir e2e senaryo tanımı ekle (örnek: ana sayfa açılır, hero görünür, services section'a scroll yapılır, form alanları bulunur)."
       ],
       "acceptance_criteria": [
-        "Yasal uyumluluk sağlandı.",
-        "Tasarım göze batmıyor."
+        "npm test veya eşdeğer komut ile temel testler çalışıyor.",
+        "En kritik UI bileşenleri için en az 3–4 test mevcut.",
+        "Gelecekte yeni test eklemek için net bir pattern oluşmuş."
+      ]
+    },
+    {
+      "id": "DOCS-01",
+      "area": "documentation",
+      "title": "Geliştirici Dokümantasyonu (metadata.json veya README)",
+      "description": "Projenin nasıl geliştirileceğini ve mimarisini anlatan kısa bir dokümantasyon ekle.",
+      "steps": [
+        "metadata.json içine 'developer_notes' veya benzer bir alan ekleyerek klasör yapısı, tip sistemi, i18n, analytics ve form entegrasyonu hakkında kısa açıklamalar yaz.",
+        "Alternatif olarak kök dizinde README.md oluşturarak proje kurulumu, script'ler ve mimari kararları özetle.",
+        "Yeni gelen bir geliştiricinin 5–10 dakika içinde projeyi anlayabilmesini sağlayacak seviyede bilgi ver."
+      ],
+      "acceptance_criteria": [
+        "Projeyi ilk kez gören biri, hangi dosyanın ne yaptığını dokümantasyondan anlayabiliyor.",
+        "Önemli mimari kararlar (klasör yapısı, tip stratejisi, i18n, analytics) açıkça yazılmış."
       ]
     }
-  ]
+  ],
+  "requestFramePermissions": [],
+  "name": "",
+  "description": ""
 }
