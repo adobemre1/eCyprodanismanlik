@@ -1,0 +1,185 @@
+{
+  "categories": [
+    {
+      "id": "genel",
+      "name": "Genel Sorular",
+      "slug": "genel",
+      "icon": "HelpCircle",
+      "order": 1
+    },
+    {
+      "id": "hizmetler",
+      "name": "Hizmetler Hakkında",
+      "slug": "hizmetler",
+      "icon": "Briefcase",
+      "order": 2
+    },
+    {
+      "id": "fiyatlandirma",
+      "name": "Fiyatlandırma",
+      "slug": "fiyatlandirma",
+      "icon": "DollarSign",
+      "order": 3
+    },
+    {
+      "id": "surecler",
+      "name": "Süreçler",
+      "slug": "surecler",
+      "icon": "TrendingUp",
+      "order": 4
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "category": "genel",
+      "question": "eCyPro Yönetim Danışmanlığı ne tür hizmetler sunuyor?",
+      "answer": "Stratejik yönetim, İnsan Kaynakları, liderlik koçluğu, örgütsel davranış, kurumsal etik, kamu yönetimi ve girişimcilik danışmanlığı olmak üzere 7 ana alanda hizmet veriyoruz. Her hizmetimiz kurumunuzun özel ihtiyaçlarına göre özelleştirilebilir.",
+      "tags": ["hizmetler", "genel"],
+      "featured": true,
+      "order": 1
+    },
+    {
+      "id": "2",
+      "category": "genel",
+      "question": "Hangi sektörlere hizmet veriyorsunuz?",
+      "answer": "Üretim, hizmet, finans, teknoloji, sağlık, eğitim, kamu ve sivil toplum kuruluşları dahil olmak üzere tüm sektörlere hizmet veriyoruz. 15+ yıllık deneyimimiz boyunca 50'den fazla farklı sektörde projeler gerçekleştirdik.",
+      "tags": ["sektör", "genel"],
+      "featured": true,
+      "order": 2
+    },
+    {
+      "id": "3",
+      "category": "genel",
+      "question": "İlk görüşme ücretli mi?",
+      "answer": "Hayır, ilk 30 dakikalık ön görüşme tamamen ücretsizdir. Bu görüşmede ihtiyaçlarınızı dinler, size özel çözüm önerilerimizi paylaşırız. Yükümlülük olmaksızın tanışma fırsatıdır.",
+      "tags": ["ücret", "görüşme"],
+      "featured": true,
+      "order": 3
+    },
+    {
+      "id": "4",
+      "category": "genel",
+      "question": "Sadece İstanbul'da mı hizmet veriyorsunuz?",
+      "answer": "Ofisimiz İstanbul'da olmakla birlikte, Türkiye genelinde ve online olarak hizmet veriyoruz. Uzaktan danışmanlık ve koçluk hizmetlerimiz mevcuttur. Gerektiğinde kurumunuzun bulunduğu şehre gidiyoruz.",
+      "tags": ["konum", "online"],
+      "featured": true,
+      "order": 4
+    },
+    {
+      "id": "5",
+      "category": "hizmetler",
+      "question": "Stratejik planlama süreci ne kadar sürer?",
+      "answer": "Kurumunuzun büyüklüğüne ve karmaşıklığına bağlı olarak, ortalama 2-4 ay arasında değişir. İlk aşamada detaylı analiz yaparız, ardından strateji geliştirme ve planlama aşamalarına geçeriz. Acil durumlar için hızlandırılmış süreçler de sunabiliyoruz.",
+      "tags": ["stratejik planlama", "süre"],
+      "featured": false,
+      "order": 5
+    },
+    {
+      "id": "6",
+      "category": "hizmetler",
+      "question": "Executive coaching programı nasıl işliyor?",
+      "answer": "Executive coaching programları genellikle 6-12 ay sürer. Aylık 2-4 seans (her biri 90 dakika) şeklinde planlanır. İlk seanslarda 360 derece değerlendirme yapılır, kişisel hedefler belirlenir, sonrasında düzenli koçluk seansları ile ilerleme sağlanır.",
+      "tags": ["koçluk", "liderlik"],
+      "featured": false,
+      "order": 6
+    },
+    {
+      "id": "7",
+      "category": "hizmetler",
+      "question": "KOBİ'ler için de danışmanlık hizmeti veriyor musunuz?",
+      "answer": "Kesinlikle evet! KOBİ'lere özel paketlerimiz mevcuttur. Küçük ve orta ölçekli işletmeler için uygun maliyetli, esnek ve ölçeklenebilir çözümler sunuyoruz. Bütçenize uygun paket tasarlayabiliriz.",
+      "tags": ["KOBİ", "küçük işletme"],
+      "featured": true,
+      "order": 7
+    },
+    {
+      "id": "8",
+      "category": "hizmetler",
+      "question": "Danışmanlık ve koçluk arasındaki fark nedir?",
+      "answer": "Danışmanlık, uzmanımızın bilgi ve deneyimine dayanarak çözüm önerileri sunmasıdır. Koçluk ise, kişinin kendi çözümlerini bulmasını sağlayan, potansiyeli açığa çıkaran bir süreçtir. Her ikisini de duruma göre kullanırız.",
+      "tags": ["koçluk", "danışmanlık", "fark"],
+      "featured": false,
+      "order": 8
+    },
+    {
+      "id": "9",
+      "category": "fiyatlandirma",
+      "question": "Danışmanlık ücretleri nasıl belirleniyor?",
+      "answer": "Ücretlendirme, projenin kapsamına, süresine, gereken uzmanlık seviyesine ve kaynaklara göre belirlenir. Saatlik, günlük veya proje bazlı ücretlendirme seçeneklerimiz var. Detaylı teklif için ücretsiz görüşme yapıyoruz.",
+      "tags": ["ücret", "fiyat"],
+      "featured": true,
+      "order": 9
+    },
+    {
+      "id": "10",
+      "category": "fiyatlandirma",
+      "question": "Ödeme planları esnek mi?",
+      "answer": "Evet, ödeme koşulları proje bazlı belirle nir ve esnektir. Genellikle proje başında ön ödeme, sonrasında aşamalı ödemeler şeklinde çalışırız. KOBİ'ler için özel ödeme planları sunabiliriz.",
+      "tags": ["ödeme", "taksit"],
+      "featured": false,
+      "order": 10
+    },
+    {
+      "id": "11",
+      "category": "fiyatlandirma",
+      "question": "Teklif almak için ne yapmam gerekiyor?",
+      "answer": "İletişim formumuzu doldurarak veya +90 541 714 30 00 numaralı telefondan bizi arayarak ücretsiz ön görüşme talep edebilirsiniz. Görüşme sonrasında size özel detaylı teklif hazırlarız.",
+      "tags": ["teklif", "fiyat"],
+      "featured": false,
+      "order": 11
+    },
+    {
+      "id": "12",
+      "category": "surecler",
+      "question": "Projeye nasıl başlanıyor?",
+      "answer": "1) Ücretsiz ön görüşme 2) İhtiyaç analizi 3) Teklif sunumu 4) Sözleşme imzalama 5) Proje başlangıcı. Tüm süreç genellikle 1-2 hafta içinde tamamlanır.",
+      "tags": ["süreç", "başlangıç"],
+      "featured": false,
+      "order": 12
+    },
+    {
+      "id": "13",
+      "category": "surecler",
+      "question": "Proje sırasında ne kadar süre ayırmam gerekir?",
+      "answer": "Projenin türüne göre değişir. Genellikle haftada 2-4 saat arası zaman ayırmanız yeterlidir. Yoğun dönemlerde (atölye, toplantılar) daha fazla, rutin dönemlerde daha az zaman gerekebilir.",
+      "tags": ["zaman", "süreç"],
+      "featured": false,
+      "order": 13
+    },
+    {
+      "id": "14",
+      "category": "surecler",
+      "question": "Sonuçları nasıl ölçüyorsunuz?",
+      "answer": "Her proje için başlangıçta ölçülebilir hedefler ve KPI'lar belirliyoruz. Düzenli raporlamalar ile ilerlemeyi takip ediyoruz. Proje sonunda detaylı sonuç raporu sunuyoruz.",
+      "tags": ["ölçüm", "KPI", "sonuç"],
+      "featured": false,
+      "order": 14
+    },
+    {
+      "id": "15",
+      "category": "surecler",
+      "question": "Gizlilik anlaşması yapıyor musunuz?",
+      "answer": "Evet, tüm projelerimizde gizlilik (NDA) anlaşması yapıyoruz. Tüm bilgileriniz ve verileriniz tam güvenlik altındadır. Müşteri bilgilerini asla üçüncü şahıslarla paylaşmayız.",
+      "tags": ["gizlilik", "NDA", "güvenlik"],
+      "featured": true,
+      "order": 15
+    },
+    {
+      "id": "16",
+      "category": "surecler",
+      "question": "Proje sonrası destek veriyor musunuz?",
+      "answer": "Evet, çoğu projemizde 3-6 ay süreyle proje sonrası destek sunuyoruz. Uygulama aşamasında karşılaşılan sorunlarda yardımcı oluruz. İsteğe bağlı bakım sözleşmeleri de mevcuttur.",
+      "tags": ["destek", "proje sonrası"],
+      "featured": false,
+      "order": 16
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-04",
+    "totalQuestions": 16,
+    "totalCategories": 4,
+    "language": "tr"
+  }
+}

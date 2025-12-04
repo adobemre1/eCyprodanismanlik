@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" role="img" aria-label="EcyPro Logo">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="120" rx="16" fill="#0f172a"/>
+  <path d="M70 36c-18 0-32 14-32 32s14 32 32 32h46c-6 8-17 14-29 14-20 0-36-16-36-36s16-36 36-36c12 0 23 6 29 14H70z" fill="url(#g)"/>
+  <text x="130" y="70" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="32" font-weight="700">EcyPro</text>
+  <text x="130" y="96" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="500">Stratejik Danışmanlık</text>
+</svg>

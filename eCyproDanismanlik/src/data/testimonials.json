@@ -1,0 +1,159 @@
+{
+  "testimonials": [
+    {
+      "id": "1",
+      "clientName": "Mehmet Demir",
+      "company": "TechVision A.Ş.",
+      "role": "Genel Müdür",
+      "content": "eCyPro ile çalışmak şirketimiz için dönüm noktası oldu. Stratejik planlama sürecinde aldığımız danışmanlık sayesinde hedeflerimizi netleştirdik ve 2 yıl içinde cironu %150 artırdık. Profesyonel yaklaşımları ve sonuç odaklı çalışmaları için teşekkür ederiz.",
+      "rating": 5,
+      "serviceUsed": "stratejik-yonetim",
+      "image": "/assets/testimonials/mehmet-demir.jpg",
+      "featured": true,
+      "date": "2024-11-15",
+      "results": [
+        "Ciro %150 artış",
+        "Net hedefler belirlendi",
+        "Sürdürülebilir büyüme"
+      ]
+    },
+    {
+      "id": "2",
+      "clientName": "Ayşe Kaya",
+      "company": "İnovasyon Bank",
+      "role": "İnsan Kaynakları Direktörü",
+      "content": "İK süreçlerimizi tamamen yeniden yapılandırdık. Performans yönetimi sistemimiz, yeni ücretlendirme politikamız ve eğitim programlarımız çalışan memnuniyetini %40 artırdı. eCyPro ekibinin uzmanlığı ve deneyimi gerçekten fark yarattı.",
+      "rating": 5,
+      "serviceUsed": "insan-kaynaklari",
+      "image": "/assets/testimonials/ayse-kaya.jpg",
+      "featured": true,
+      "date": "2024-10-20",
+      "results": [
+        "Çalışan memnuniyeti %40↑",
+        "Modern İK sistemleri",
+        "Düşük turnover"
+      ]
+    },
+    {
+      "id": "3",
+      "clientName": "Can Yılmaz",
+      "company": "StartHub",
+      "role": "Kurucu Ortak",
+      "content": "Girişimcilik danışmanlığı aldık ve iş modelimizi sıfırdan kurduk. İş planı, finansal projeksiyon ve yatırımcı pitch deck hazırlama sürecinde aldığımız destek sayesinde ilk yatırımımızı aldık. Startup'lar için ideal bir partner!",
+      "rating": 5,
+      "serviceUsed": "girisimcilik",
+      "image": "/assets/testimonials/can-yilmaz.jpg",
+      "featured": true,
+      "date": "2024-09-10",
+      "results": [
+        "Seed yatırım alındı",
+        "Profesyonel iş planı",
+        "Güçlü pitch deck"
+      ]
+    },
+    {
+      "id": "4",
+      "clientName": "Dr. Zeynep Arslan",
+      "company": "Kadıköy Belediyesi",
+      "role": "Başkan Danışmanı",
+      "content": "Belediyemiz için 5 yıllık stratejik plan hazırlama sürecinde eCyPro ile çalıştık. Katılımcı yaklaşımları, profesyonel metodolojileri ve kamu yönetimi konusundaki derin bilgileri projeyi başarıyla tamamlamamızı sağladı.",
+      "rating": 5,
+      "serviceUsed": "kamu-yonetimi",
+      "image": "/assets/testimonials/zeynep-arslan-2.jpg",
+      "featured": true,
+      "date": "2024-08-05",
+      "results": [
+        "5 yıllık stratejik plan",
+        "Paydaş katılımı",
+        "Ölçülebilir hedefler"
+      ]
+    },
+    {
+      "id": "5",
+      "clientName": "Ahmet Şahin",
+      "company": "Global Lojistik",
+      "role": "CEO",
+      "content": "Executive coaching programı kariyerimde dönüm noktası oldu. Liderlik becerilerimi geliştirdim, ekip yönetiminde çok daha etkili oldum. Mehmet Bey'in koçluğu gerçekten değer kattı.",
+      "rating": 5,
+      "serviceUsed": "liderlik-koclugu",
+      "image": "/assets/testimonials/ahmet-sahin.jpg",
+      "featured": false,
+      "date": "2024-07-15",
+      "results": [
+        "Liderlik becerileri↑",
+        "Ekip performansı↑",
+        "Kişisel farkındalık"
+      ]
+    },
+    {
+      "id": "6",
+      "clientName": "Elif Demir",
+      "company": "EkoTex Tekstil",
+      "role": "Genel Müdür Yardımcısı",
+      "content": "Kurumsal kültür geliştirme projemizde eCyPro'nun desteği çok değerliydi. Çalışan bağlılığını artırdık, iç iletişimimizi güçlendirdik. Şirkette pozitif bir atmosfer oluştu.",
+      "rating": 5,
+      "serviceUsed": "orgutsel-davranis",
+      "image": "/assets/testimonials/elif-demir.jpg",
+      "featured": false,
+      "date": "2024-06-20",
+      "results": [
+        "Bağlılık artışı",
+        "İç iletişim güçlendi",
+        "Pozitif kültür"
+      ]
+    },
+    {
+      "id": "7",
+      "clientName": "Burak Öztürk",
+      "company": "GreenEnergy",
+      "role": "Sürdürülebilirlik Müdürü",
+      "content": "KSS stratejimizi ve sürdürülebilirlik raporumuzu hazırlama sürecinde profesyonel destek aldık. ESG kriterlerine uyumlu, etki odaklı bir strateji geliştirdik.",
+      "rating": 5,
+      "serviceUsed": "kurumsal-etik",
+      "image": "/assets/testimonials/burak-ozturk.jpg",
+      "featured": false,
+      "date": "2024-05-10",
+      "results": [
+        "ESG stratejisi",
+        "Sürdürülebilirlik raporu",
+        "Toplumsal etki"
+      ]
+    },
+    {
+      "id": "8",
+      "clientName": "Selin Yıldız",
+      "company": "HealthPlus Hastaneleri",
+      "role": "İK Müdürü",
+      "content": "Performans yönetimi sistemimizi sıfırdan kurduk. 360 derece değerlendirme, KPI takibi ve gelişim planları ile çalışan performansını ölçülebilir hale getirdik. Harika bir deneyimdi!",
+      "rating": 5,
+      "serviceUsed": "insan-kaynaklari",
+      "image": "/assets/testimonials/selin-yildiz.jpg",
+      "featured": false,
+      "date": "2024-04-15",
+      "results": [
+        "Performans sistemi",
+        "360° değerlendirme",
+        "KPI takibi"
+      ]
+    }
+  ],
+  "summary": {
+    "totalTestimonials": 8,
+    "averageRating": 5.0,
+    "featuredCount": 4,
+    "serviceBreakdown": {
+      "stratejik-yonetim": 1,
+      "insan-kaynaklari": 2,
+      "orgutsel-davranis": 1,
+      "liderlik-koclugu": 1,
+      "kurumsal-etik": 1,
+      "kamu-yonetimi": 1,
+      "girisimcilik": 1
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-04",
+    "language": "tr"
+  }
+}

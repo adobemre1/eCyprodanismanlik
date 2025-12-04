@@ -1,0 +1,259 @@
+{
+  "caseStudies": [
+    {
+      "id": "1",
+      "slug": "techvision-dijital-donusum",
+      "title": "TechVision A.Ş. - Dijital Dönüşüm ve Stratejik Yeniden Yapılanma",
+      "client": "TechVision A.Ş.",
+      "industry": "Teknoloji / Yazılım",
+      "serviceUsed": "stratejik-yonetim",
+      "duration": "6 ay",
+      "teamSize": "3 danışman",
+      "challenge": "TechVision, hızlı büyüyen bir yazılım şirketiydi ancak organizasyon yapısı ve süreçleri bu büyümeye ayak uyduramıyordu. Stratejik net lik eksikliği, departmanlar arası iletişim sorunları ve verimsiz karar alma mekanizmaları büyümeyi engelleyordu.",
+      "solution": [
+        "Kapsamlı mevcut durum analizi ve SWOT değerlendirmesi",
+        "3 yıllık stratejik plan oluşturma (vizyon, misyon, hedefler)",
+        "Yeni organizasyon yapısı tasarımı ve departman yapılandırması",
+        "OKR (Objectives and Key Results) metodolojisi ile hedef yönetimi",
+        "Dijital dönüşüm yol haritası ve teknoloji stratejisi",
+        "Yönetim kurulu ve üst yönetim koçluğu"
+      ],
+      "results": [
+        {
+          "metric": "Ciro Artışı",
+          "value": "%150",
+          "description": "2 yıl içinde ciro 3 katına çıktı"
+        },
+        {
+          "metric": "Operasyonel Verimlilik",
+          "value": "%35",
+          "description": "Süreç iyileştirmeleri ile verimlilik artışı"
+        },
+        {
+          "metric": "Çalışan Memnuniyeti",
+          "value": "8.5/10",
+          "description": "Net düzenli yapı ile memnuniyet arttı"
+        },
+        {
+          "metric": "Pazar Payı",
+          "value": "+12%",
+          "description": "Sektörde pazar payı artışı"
+        }
+      ],
+      "testimonial": {
+        "quote": "eCyPro ile çalışmak şirketimiz için dönüm noktası oldu. Hedeflerimizi netleştirdik ve sürdürülebilir büyüme sağladık.",
+        "author": "Mehmet Demir",
+        "role": "Genel Müdür, TechVision A.Ş."
+      },
+      "image": "/assets/case-studies/techvision.jpg",
+      "featured": true,
+      "publishedAt": "2024-11-01"
+    },
+    {
+      "id": "2",
+      "slug": "inovasyon-bank-ik-donusumu",
+      "title": "İnovasyon Bank - İnsan Kaynakları Dönüşümü",
+      "client": "İnovasyon Bank",
+      "industry": "Finans / Bankacılık",
+      "serviceUsed": "insan-kaynaklari",
+      "duration": "8 ay",
+      "teamSize": "2 danışman",
+      "challenge": "600 çalışanlı bir banka olan İnovasyon Bank, eski İK sistemleri ve düşük çalışan memnuniyeti ile mücadele ediyordu. Yüksek turnover oranı (%25), verimsiz performans değerlendirme ve yetersiz eğitim programları en büyük sorunlardı.",
+      "solution": [
+        "İK mevcut durum analizi ve best practice karşılaştırması",
+        "Yeni performans yönetimi sistemi tasarımı (360 derece, OKR)",
+        "Rekabetçi ücret ve yan haklar politikası oluşturma",
+        "Yetenek yönetimi ve succession planning programı",
+        "Kapsamlı eğitim ve gelişim programları tasarımı",
+        "HRIS (İK Bilgi Sistemi) seçimi ve implementasyonu",
+        "Çalışan bağlılığı anketleri ve iyileştirme planları"
+      ],
+      "results": [
+        {
+          "metric": "Çalışan Memnuniyeti",
+          "value": "+40%",
+          "description": "Engagement skoru %55'ten %95'e yükseldi"
+        },
+        {
+          "metric": "Turnover Oranı",
+          "value": "-%60",
+          "description": "%25'ten %10'a düştü"
+        },
+        {
+          "metric": "İşe Alım Süresi",
+          "value": "-%35",
+          "description": "Ortalama 45 günden 29 güne indi"
+        },
+        {
+          "metric": "Eğitim Saati/Çalışan",
+          "value": "40 saat/yıl",
+          "description": "Kapsamlı gelişim programları"
+        }
+      ],
+      "testimonial": {
+        "quote": "İK süreçlerimizi modernize ettik. Çalışan memnuniyeti rekor seviyelere ulaştı. eCyPro'nun uzmanlığı gerçekten fark yarattı.",
+        "author": "Ayşe Kaya",
+        "role": "İK Direktörü, İnovasyon Bank"
+      },
+      "image": "/assets/case-studies/inovasyon-bank.jpg",
+      "featured": true,
+      "publishedAt": "2024-10-15"
+    },
+    {
+      "id": "3",
+      "slug": "kadikoy-belediyesi-stratejik-plan",
+      "title": "Kadıköy Belediyesi - 5 Yıllık Stratejik Plan",
+      "client": "Kadıköy Belediyesi",
+      "industry": "Kamu / Belediye",
+      "serviceUsed": "kamu-yonetimi",
+      "duration": "4 ay",
+      "teamSize": "3 danışman",
+      "challenge": "Kadıköy Belediyesi, 5018 sayılı kanun gereği yeni dönem için stratejik planını hazırlamak istiyordu. Geniş paydaş katılımı, ölçülebilir hedefler ve gerçekçi performans göstergeleri en önemli beklentilerdi.",
+      "solution": [
+        "Mevcut durum analizi ve PEST/SWOT değerlendirmesi",
+        "Geniş paydaş katılımı (anketler, odak gruplar, çalıştaylar)",
+        "Vizyon-misyon ve stratejik amaçlar belirleme",
+        "6 stratejik amaç, 24 hedef, 78 performans göstergesi tasarımı",
+        "Bütçe tahminleri ve kaynak planlaması",
+        "Performans programı ve izleme-değerlendirme sistemi",
+        "Kalkınma Bakanlığı formatlarına uygun dokümantasyon"
+      ],
+      "results": [
+        {
+          "metric": "Paydaş Katılımı",
+          "value": "2,500+ kişi",
+          "description": "Anket ve çalıştaylarla katılım"
+        },
+        {
+          "metric": "Stratejik Hedef",
+          "value": "24 hedef",
+          "description": "6 stratejik amaç altında"
+        },
+        {
+          "metric": "Performans Göstergesi",
+          "value": "78 KPI",
+          "description": "Ölçülebilir ve takip edilebilir"
+        },
+        {
+          "metric": "Onay Süresi",
+          "value": "İlk turda onaylandı",
+          "description": "Kalkınma Bakanlığı değerlendirmesi"
+        }
+      ],
+      "testimonial": {
+        "quote": "Katılımcı ve profesyonel bir süreç yönettik. eCyPro'nun kamu deneyimi ve metodolojisi başarının anahtarıydı.",
+        "author": "Dr. Zeynep Yılmaz",
+        "role": "Başkan Danışmanı, Kadıköy Belediyesi"
+      },
+      "image": "/assets/case-studies/kadikoy-belediyesi.jpg",
+      "featured": true,
+      "publishedAt": "2024-09-20"
+    },
+    {
+      "id": "4",
+      "slug": "starthub-girisimcilik-mentorluğu",
+      "title": "StartHub - Girişimcilik Mentorluk ve Yatırım Hazırlığı",
+      "client": "StartHub",
+      "industry": "Teknoloji / Startup",
+      "serviceUsed": "girisimcilik",
+      "duration": "3 ay",
+      "teamSize": "2 danışman + 1 mentor",
+      "challenge": "StartHub, bir SaaS ürünü geliştiren erken aşama startup'tı. İş modeli belirsiz, finansal projeksiyon yetersiz ve yatırımcı sunumu zayıftı. Seed yatırım almak için hazırlık gerekiyordu.",
+      "solution": [
+        "Business model canvas çalışması ve iş modeli netleştirme",
+        "Pazar araştırması ve rekabet analizi",
+        "Detaylı finansal model ve 5 yıllık projeksiyon",
+        "Profesyonel pitch deck hazırlama (20 slayt)",
+        "Yatırımcı listesi oluşturma ve network desteği",
+        "Pitch pratiği ve sunum koçluğu",
+        "Due diligence hazırlığı ve yasal dökümanlar"
+      ],
+      "results": [
+        {
+          "metric": "Seed Yatırım",
+          "value": "$500K",
+          "description": "3 ay içinde yatırım alındı"
+        },
+        {
+          "metric": "Valuation",
+          "value": "$2.5M",
+          "description": "Pre-money değerleme"
+        },
+        {
+          "metric": "Yatırımcı Görüşmesi",
+          "value": "15 görüşme",
+          "description": "Nitelikli yatırımcılarla"
+        },
+        {
+          "metric": "Business Plan",
+          "value": "45 sayfa",
+          "description": "Profesyonel ve detaylı"
+        }
+      ],
+      "testimonial": {
+        "quote": "eCyPro olmasaydı yatırım alamazdık. İş modelimizi netleştirdiler, pitch'imizi profesyonelleştirdiler. İlk yatırımımızı aldık!",
+        "author": "Can Yılmaz",
+        "role": "Kurucu Ortak, StartHub"
+      },
+      "image": "/assets/case-studies/starthub.jpg",
+      "featured": false,
+      "publishedAt": "2024-08-10"
+    },
+    {
+      "id": "5",
+      "slug": "global-lojistik-executive-coaching",
+      "title": "Global Lojistik - C-Level Executive Coaching Programı",
+      "client": "Global Lojistik A.Ş.",
+      "industry": "Lojistik / Ulaştırma",
+      "serviceUsed": "liderlik-koclugu",
+      "duration": "12 ay",
+      "teamSize": "1 executive coach",
+      "challenge": "Global Lojistik'in CEO'su Ahmet Bey, hızlı büyüme döneminde liderlik becerilerini geliştirmek ve yeni stratejik vizyon oluşturmak istiyordu. Ekip yönetimi, delegasyon ve stratejik düşünme konularında destek gerekiyordu.",
+      "solution": [
+        "360 derece değerlendirme ve kişisel farkındalık analizi",
+        "Aylık 4 koçluk seansı (her biri 90 dakika)",
+        "Liderlik tarzı değerlendirmesi (Hogan, DISC)",
+        "Kişisel gelişim planı oluşturma ve takibi",
+        "Stratejik düşünme ve vizyon oluşturma çalışmaları",
+        "Ekip yönetimi ve delegasyon becerileri geliştirme",
+        "İş-yaşam dengesi ve stres yönetimi"
+      ],
+      "results": [
+        {
+          "metric": "Liderlik Skoru",
+          "value": "+35%",
+          "description": "360 derece değerlendirme iyileşmesi"
+        },
+        {
+          "metric": "Ekip Performansı",
+          "value": "+28%",
+          "description": "Üst yönetim ekibi verimliliği"
+        },
+        {
+          "metric": "Stratejik Proje",
+          "value": "5 yeni proje",
+          "description": "Başarıyla hayata geçirildi"
+        },
+        {
+          "metric": "İş Memnuniyeti",
+          "value": "9/10",
+          "description": "Kişisel tatmin ve motivasyon"
+        }
+      ],
+      "testimonial": {
+        "quote": "Executive coaching kariyerimde dönüm noktası oldu. Liderlik becerilerimi geliştirdim, ekip yönetiminde çok daha etkili oldum.",
+        "author": "Ahmet Şahin",
+        "role": "CEO, Global Lojistik A.Ş."
+      },
+      "image": "/assets/case-studies/global-lojistik.jpg",
+      "featured": false,
+      "publishedAt": "2024-07-05"
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-04",
+    "totalCaseStudies": 5,
+    "language": "tr"
+  }
+}

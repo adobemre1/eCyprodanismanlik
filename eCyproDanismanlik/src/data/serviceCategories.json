@@ -1,0 +1,114 @@
+{
+  "categories": [
+    {
+      "id": "strategy",
+      "slug": "stratejik-yonetim",
+      "name": "Stratejik Yönetim",
+      "description": "Kurumsal strateji, planlama ve yönetim danışmanlığı hizmetleri",
+      "icon": "Target",
+      "color": "#3B82F6",
+      "services": ["stratejik-yonetim"],
+      "order": 1
+    },
+    {
+      "id": "hr",
+      "slug": "insan-kaynaklari",
+      "name": "İnsan Kaynakları",
+      "description": "İK süreçleri, yetenek yönetimi ve performans iyileştirme",
+      "icon": "Users",
+      "color": "#10B981",
+      "services": ["insan-kaynaklari"],
+      "order": 2
+    },
+    {
+      "id": "communication",
+      "slug": "iletisim-kultur",
+      "name": "İletişim ve Kültür",
+      "description": "Kurumsal iletişim, kültür geliştirme ve değişim yönetimi",
+      "icon": "MessageSquare",
+      "color": "#8B5CF6",
+      "services": ["orgutsel-davranis"],
+      "order": 3
+    },
+    {
+      "id": "leadership",
+      "slug": "liderlik",
+      "name": "Liderlik ve Gelişim",
+      "description": "Liderlik koçluğu, yönetici eğitimleri ve kişisel gelişim",
+      "icon": "Award",
+      "color": "#F59E0B",
+      "services": ["liderlik-koclugu"],
+      "order": 4
+    },
+    {
+      "id": "ethics",
+      "slug": "etik-sorumluluk",
+      "name": "Etik ve Sorumluluk",
+      "description": "Kurumsal etik, sürdürülebilirlik ve sosyal sorumluluk",
+      "icon": "Heart",
+      "color": "#EF4444",
+      "services": ["kurumsal-etik"],
+      "order": 5
+    },
+    {
+      "id": "public",
+      "slug": "kamu-yonetimi",
+      "name": "Kamu Yönetimi",
+      "description": "Belediye ve kamu kurumları için özel danışmanlık hizmetleri",
+      "icon": "Building",
+      "color": "#6366F1",
+      "services": ["kamu-yonetimi"],
+      "order": 6
+    },
+    {
+      "id": "entrepreneurship",
+      "slug": "girisimcilik",
+      "name": "Girişimcilik",
+      "description": "Startup danışmanlığı, iş geliştirme ve ölçeklendirme",
+      "icon": "Rocket",
+      "color": "#EC4899",
+      "services": ["girisimcilik"],
+      "order": 7
+    }
+  ],
+  "servicesByCategory": {
+    "Tüm Hizmetler": [
+      "stratejik-yonetim",
+      "insan-kaynaklari",
+      "orgutsel-davranis",
+      "liderlik-koclugu",
+      "kurumsal-etik",
+      "kamu-yonetimi",
+      "girisimcilik"
+    ],
+    "Popüler": [
+      "stratejik-yonetim",
+      "insan-kaynaklari",
+      "orgutsel-davranis",
+      "liderlik-koclugu",
+      "kamu-yonetimi"
+    ],
+    "Kurumsal": [
+      "stratejik-yonetim",
+      "insan-kaynaklari",
+      "orgutsel-davranis",
+      "kurumsal-etik"
+    ],
+    "Kamu": [
+      "kamu-yonetimi",
+      "stratejik-yonetim",
+      "kurumsal-etik"
+    ],
+    "Startup": [
+      "girisimcilik",
+      "stratejik-yonetim",
+      "liderlik-koclugu"
+    ]
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-04",
+    "totalCategories": 7,
+    "language": "tr"
+  }
+}

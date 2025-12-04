@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.eCypro.com/sitemap.xml

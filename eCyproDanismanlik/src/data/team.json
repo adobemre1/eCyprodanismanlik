@@ -1,0 +1,190 @@
+{
+  "team": [
+    {
+      "id": "emre-ozturk",
+      "name": "Dr. Emre Öztürk",
+      "role": "Kurucu Ortak & Yönetim Kurulu Başkanı",
+      "specialty": "Stratejik Yönetim ve Kurumsal Yönetişim",
+      "bio": "25 yıllık kurumsal deneyimi ile stratejik yönetim, kurumsal yönetim ve organizasyon geliştirme alanlarında uzman. Yönetim Bilimleri doktorası. Harvard Business School Executive Education mezunu. 100+ kuruma danışmanlık verdi.",
+      "longBio": "Dr. Emre Öztürk, yönetim danışmanlığı alanında 25 yılı aşkın deneyime sahiptir. Kariyerine Fortune 500 şirketlerinde üst düzey yönetici olarak başlamış, sonrasında akademik kariyere yönelerek Yönetim Bilimleri alanında doktorasını tamamlamıştır. Harvard Business School'da Executive Education programlarını bitirmiş, uluslararası sertifikalara sahiptir. eCyPro'yu 2010 yılında kurarak Türkiye'de yönetim danışmanlığı standartlarını yükseltme vizyonu ile çalışmalarına devam etmektedir.",
+      "image": "/assets/team/emre-ozturk.jpg",
+      "email": "emre.ozturk@ecypro.com",
+      "phone": "+90 541 714 30 00",
+      "linkedin": "https://linkedin.com/in/emreozturk",
+      "certifications": [
+        "PMP - Project Management Professional",
+        "CMC - Certified Management Consultant",
+        "Executive Coach (ICF ACC)",
+        "Harvard Business School Executive Education"
+      ],
+      "education": [
+        {
+          "degree": "PhD",
+          "field": "Yönetim Bilimleri",
+          "institution": "İstanbul Üniversitesi",
+          "year": "2008"
+        },
+        {
+          "degree": "MBA",
+          "field": "İşletme Yönetimi",
+          "institution": "Boğaziçi Üniversitesi",
+          "year": "2002"
+        }
+      ],
+      "expertise": [
+        "Stratejik Planlama",
+        "Kurumsal Yönetim",
+        "Organizasyon Geliştirme",
+        "Değişim Yönetimi",
+        "İş Modeli Tasarımı"
+      ],
+      "languages": ["Türkçe (Ana Dil)", "İngilizce (İleri Düzey)", "Almanca (Orta Düzey)"],
+      "featured": true,
+      "order": 1
+    },
+    {
+      "id": "ayse-yilmaz",
+      "name": "Prof. Dr. Ayşe Yılmaz",
+      "role": "Kıdemli Danışman - İK & Organizasyonel Davranış",
+      "specialty": "İnsan Kaynakları ve Organizasyonel Davranış",
+      "bio": "İK ve organizasyonel davranış alanında 20 yıllık akademik ve danışmanlık deneyimi. Çok sayıda uluslararası yayını ve konferans sunumu var. SHRM-SCP ve CIPD Chartered sertifikalarına sahip.",
+      "longBio": "Prof. Dr. Ayşe Yılmaz, İnsan Kaynakları Yönetimi ve Organizasyonel Davranış alanında Türkiye'nin önde gelen uzmanlarından biridir. 20 yılı aşkın akademik kariyeri boyunca çok sayıda uluslararası hakemli dergide makale yayınlamış, kitap bölümleri yazmıştır. Aynı zamanda Fortune 500 şirketlerine İK danışmanlığı vererek akademik bilgiyi pratiğe dönüştürmektedir.",
+      "image": "/assets/team/ayse-yilmaz.jpg",
+      "email": "ayse.yilmaz@ecypro.com",
+      "linkedin": "https://linkedin.com/in/ayseyilmaz",
+      "certifications": [
+        "SHRM-SCP - Senior Certified Professional",
+        "CIPD Chartered Member",
+        "ACC - Associate Certified Coach (ICF)",
+        "Hogan Assessment Certified"
+      ],
+      "education": [
+        {
+          "degree": "PhD",
+          "field": "Organizasyonel Davranış",
+          "institution": "Marmara Üniversitesi",
+          "year": "2010"
+        }
+      ],
+      "expertise": [
+        "İnsan Kaynakları Yönetimi",
+        "Performans Yönetimi",
+        "Yetenek Yönetimi",
+        "Organizasyon Kültürü",
+        "Çalışan Bağlılığı"
+      ],
+      "languages": ["Türkçe (Ana Dil)", "İngilizce (İleri Düzey)"],
+      "featured": true,
+      "order": 2
+    },
+    {
+      "id": "mehmet-kaya",
+      "name": "Mehmet Kaya, MBA",
+      "role": "Kıdemli Danışman - Liderlik & Executive Coaching",
+      "specialty": "Liderlik ve Executive Coaching",
+      "bio": "Fortune 500 şirketlerinde üst düzey yöneticilik deneyimi. ICF sertifikalı executive coach. 200+ yöneticiye koçluk verdi. Liderlik geliştirme programları tasarlar ve uygular.",
+      "longBio": "Mehmet Kaya, 18 yıllık kurumsal deneyimi boyunca ulusal ve uluslararası şirketlerde Genel Müdür, Bölge Direktörü gibi üst düzey pozisyonlarda görev almıştır. 2015 yılında ICF sertifikalı executive coach olmuş ve o tarihten bu yana 200'den fazla üst düzey yöneticiye koçluk vermiştir. Liderlik, stratejik düşünme ve ekip yönetimi konularında uzmandır.",
+      "image": "/assets/team/mehmet-kaya.jpg",
+      "email": "mehmet.kaya@ecypro.com",
+      "linkedin": "https://linkedin.com/in/mehmetkaya",
+      "certifications": [
+        "ICF PCC - Professional Certified Coach",
+        "Leadership Circle Profile Practitioner",
+        "Hogan Assessment Certified",
+        "MBTI Certified Practitioner"
+      ],
+      "education": [
+        {
+          "degree": "MBA",
+          "field": "Executive MBA",
+          "institution": "Koç Üniversitesi",
+          "year": "2008"
+        }
+      ],
+      "expertise": [
+        "Executive Coaching",
+        "Liderlik Geliştirme",
+        "Ekip Koçluğu",
+        "Stratejik Düşünme",
+        "Değişim Liderliği"
+      ],
+      "languages": ["Türkçe (Ana Dil)", "İngilizce (İleri Düzey)", "Fransızca (Orta Düzey)"],
+      "featured": true,
+      "order": 3
+    },
+    {
+      "id": "zeynep-arslan",
+      "name": "Zeynep Arslan, MPA",
+      "role": "Kamu Yönetimi Uzmanı",
+      "specialty": "Belediyecilik ve Kamu Kurumları Danışmanlığı",
+      "bio": "Kamu yönetimi alanında 15 yıllık deneyim. 50+ belediye ve kamu kurumuna stratejik planlama danışmanlığı verdi. Kamu Yönetimi Yüksek Lisansı ve Stratejik Planlama Uzmanı sertifikasına sahip.",
+      "longBio": "Zeynep Arslan, kamu yönetimi ve belediyecilik alanında 15 yılı aşkın deneyime sahiptir. Kariyerine Kalkınma Bakanlığı'nda uzman olarak başlamış, daha sonra danışmanlık sektörüne geçmiştir. 50'den fazla belediye ve kamu kurumuna stratejik planlama, performans yönetimi ve kurumsal kapasite geliştirme konularında danışmanlık vermiştir. 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu kapsamında stratejik plan hazırlama konusunda uzmandır.",
+      "image": "/assets/team/zeynep-arslan.jpg",
+      "email": "zeynep.arslan@ecypro.com",
+      "linkedin": "https://linkedin.com/in/zeyneparslan",
+      "certifications": [
+        "Stratejik Planlama Uzmanı (Kalkınma Bakanlığı)",
+        "Kamu Mali Yönetimi Sertifikası",
+        "Proje Döngüsü Yönetimi (PCM)"
+      ],
+      "education": [
+        {
+          "degree": "MPA",
+          "field": "Kamu Yönetimi",
+          "institution": "Ankara Üniversitesi SBF",
+          "year": "2012"
+        }
+      ],
+      "expertise": [
+        "Stratejik Planlama (Kamu)",
+        "Performans Yönetimi",
+        "Belediyecilik",
+        "E-Belediye",
+        "Kamu Politikaları"
+      ],
+      "languages": ["Türkçe (Ana Dil)", "İngilizce (İleri Düzey)"],
+      "featured": true,
+      "order": 4
+    },
+    {
+      "id": "can-demirtas",
+      "name": "Can Demirtaş",
+      "role": "Danışman - Dijital Dönüşüm & İnovasyon",
+      "specialty": "Dijital Dönüşüm ve İnovasyon Yönetimi",
+      "bio": "Teknoloji ve inovasyon yönetimi alanında 12 yıllık deneyim. Startup ekosisteminde aktif. Dijital dönüşüm projeleri yönetir.",
+      "longBio": "Can Demirtaş, teknoloji ve inovasyon yönetimi alanında 12 yıllık deneyime sahiptir. Hem büyük kurumların dijital dönüşüm projelerinde hem de startup ekosisteminde aktif rol almıştır. Agile ve Lean Startup metodolojilerinde uzman olup, kurumların dijitalleşme yolculuğunda rehberlik eder.",
+      "image": "/assets/team/can-demirtas.jpg",
+      "email": "can.demirtas@ecypro.com",
+      "linkedin": "https://linkedin.com/in/candemirtas",
+      "certifications": [
+        "Certified Scrum Master (CSM)",
+        "Lean Six Sigma Green Belt",
+        "Google Digital Marketing"
+      ],
+      "education": [
+        {
+          "degree": "BSc",
+          "field": "Bilgisayar Mühendisliği",
+          "institution": "ODTÜ",
+          "year": "2010"
+        }
+      ],
+      "expertise": [
+        "Dijital Dönüşüm",
+        "İnovasyon Yönetimi",
+        "Agile Metodolojiler",
+        "Product Management",
+        "Startup Danışmanlığı"
+      ],
+      "languages": ["Türkçe (Ana Dil)", "İngilizce (İleri Düzey)"],
+      "featured": false,
+      "order": 5
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-04",
+    "totalMembers": 5,
+    "language": "tr"
+  }
+}

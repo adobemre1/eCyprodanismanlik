@@ -1,0 +1,710 @@
+{
+  "services": [
+    {
+      "id": "stratejik-yonetim",
+      "slug": "stratejik-yonetim",
+      "category": "strategy",
+      "name": "Stratejik Yönetim Danışmanlığı",
+      "shortDescription": "Kurumunuzun uzun vadeli başarısı için stratejik planlama, rekabet analizi ve kurumsal yönetim danışmanlığı hizmetleri sunuyoruz.",
+      "longDescription": "Stratejik yönetim danışmanlığı hizmetimiz, kurumunuzun vizyonunu netleştirmek, rekabet avantajı kazanmak ve sürdürülebilir büyüme sağlamak için tasarlanmıştır. Deneyimli danışmanlarımız, sektör analizi, SWOT değerlendirmesi, stratejik planlama ve uygulama süreçlerinde size rehberlik eder.",
+      "icon": "Target",
+      "featured": true,
+      "order": 1,
+      "benefits": [
+        "Açık ve ölçülebilir stratejik hedefler belirleme",
+        "Rekabet avantajı kazanma ve pazar payını artırma",
+        "Kaynakların etkin ve verimli kullanımı",
+        "Uzun vadeli sürdürülebilir büyüme planı",
+        "Risk yönetimi ve fırsat değerlendirme",
+        "Kurumsal performans artışı ve verimlilik"
+      ],
+      "subServices": [
+        {
+          "name": "Stratejik Planlama",
+          "description": "3-5 yıllık stratejik plan oluşturma, vizyon-misyon belirleme ve hedef koyma"
+        },
+        {
+          "name": "Kurumsal Yönetim",
+          "description": "Yönetim kurulu yapılandırması, kurumsal yönetim ilkeleri ve şirket politikaları"
+        },
+        {
+          "name": "Rekabet Analizi",
+          "description": "Pazar analizi, rakip analizi, SWOT değerlendirmesi ve pozisyonlama stratejileri"
+        },
+        {
+          "name": "İş Modeli Tasarımı",
+          "description": "Yenilikçi iş modelleri geliştirme, gelir modellerini optimize etme"
+        },
+        {
+          "name": "Dijital Dönüşüm Stratejisi",
+          "description": "Dijital teknolojileri stratejiye entegre etme ve dönüşüm yol haritası"
+        },
+        {
+          "name": "Stratejik Ortaklıklar",
+          "description": "İş birliği fırsatları değerlendirme, birleşme ve satın alma stratejileri"
+        }
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Keşif ve Analiz",
+          "description": "Mevcut durumunuzu analiz eder, sektörünüzü inceler ve fırsatları belirleriz"
+        },
+        {
+          "step": 2,
+          "title": "Strateji Geliştirme",
+          "description": "Hedeflerinize ulaşmak için özelleştirilmiş stratejiler oluşturuz"
+        },
+        {
+          "step": 3,
+          "title": "Planlama ve Tasarım",
+          "description": "Detaylı eylem planları, kilometre taşları ve sorumluluklar belirlenir"
+        },
+        {
+          "step": 4,
+          "title": "Uygulama Desteği",
+          "description": "Stratejilerin hayata geçirilmesinde aktif destek sağlarız"
+        },
+        {
+          "step": 5,
+          "title": "İzleme ve Optimizasyon",
+          "description": "Performans izleme, geri bildirim toplama ve sürekli iyileştirme"
+        }
+      ],
+      "pricing": {
+        "type": "custom",
+        "startingFrom": null,
+        "description": "Kurumunuzun ihtiyaçlarına özel fiyatlandırma. Ücretsiz ön görüşme için iletişime geçin."
+      },
+      "faq": [
+        {
+          "question": "Stratejik planlama süreci ne kadar sürer?",
+          "answer": "Kurumunuzun büyüklüğüne ve karmaşıklığına bağlı olarak, ortalama 2-4 ay arasında değişir. İlk aşamada detaylı analiz yaparız, ardından strateji geliştirme ve planlama aşamalarına geçeriz."
+        },
+        {
+          "question": "Hangi sektörlerde deneyiminiz var?",
+          "answer": "Üretim, hizmet, finans, teknoloji, kamu ve sivil toplum kuruluşları dahil olmak üzere geniş sektör yelpazesinde deneyimimiz bulunmaktadır."
+        },
+        {
+          "question": "Stratejik plan sadece büyük şirketler için mi?",
+          "answer": "Hayır, her ölçekteki kurum için stratejik planlama önemlidir. KOBİ'ler için de uygun maliyetli ve ölçeklenebilir çözümler sunuyoruz."
+        }
+      ],
+      "cta": {
+        "primary": "Ücretsiz Danışmanlık Alın",
+        "secondary": "Hizmet Detayları"
+      },
+      "relatedServices": ["insan-kaynaklari", "orgutsel-davranis", "kurumsal-etik"]
+    },
+    {
+      "id": "insan-kaynaklari",
+      "slug": "insan-kaynaklari",
+      "category": "hr",
+      "name": "İnsan Kaynakları Yönetimi",
+      "shortDescription": "İK süreçlerinizi optimize edin: İşe alım, performans yönetimi, ücret sistemleri ve yetenek geliştirme konularında uzman desteği.",
+      "longDescription": "İnsan kaynakları danışmanlığımız, kurumunuzun en değerli varlığı olan çalışanlarınızın potansiyelini maksimize etmek için tasarlanmıştır. İşe alımdan performans değerlendirmeye, ücret sistemlerinden kariyer yönetimine kadar tüm İK süreçlerinizi modernize ediyoruz.",
+      "icon": "Users",
+      "featured": true,
+      "order": 2,
+      "benefits": [
+        "Doğru yetenekleri bulma ve işe alma",
+        "Çalışan bağlılığı ve motivasyonu artırma",
+        "Performans yönetimi ile verimliliği yükseltme",
+        "Adil ve rekabetçi ücret sistemleri",
+        "Çalışan gelişimi ve kariyer planlaması",
+        "İK maliyetlerini optimize etme"
+      ],
+      "subServices": [
+        {
+          "name": "İşe Alım ve Seçme",
+          "description": "Yetenek kazanımı stratejileri, aday değerlendirme, mülakat teknikleri ve onboarding süreçleri"
+        },
+        {
+          "name": "Performans Yönetimi",
+          "description": "Performans değerlendirme sistemleri, 360 derece geri bildirim, KPI belirleme"
+        },
+        {
+          "name": "Ücret ve Yan Haklar",
+          "description": "Ücret politikaları, yan haklar yönetimi, teşvik sistemleri tasarımı"
+        },
+        {
+          "name": "Eğitim ve Gelişim",
+          "description": "Eğitim ihtiyaç analizi, gelişim programları, yetenek havuzu oluşturma"
+        },
+        {
+          "name": "İK Politika ve Prosedürleri",
+          "description": "İK el kitabı hazırlama, politika oluşturma, iş akışları tasarımı"
+        },
+        {
+          "name": "Çalışan Bağlılığı",
+          "description": "Çalışan memnuniyeti anketleri, bağlılık programları, kurumsal kültür geliştirme"
+        }
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "İK Mevcut Durum Analizi",
+          "description": "İK süreçlerinizi detaylı olarak analiz eder, güçlü ve zayıf yönleri tespit ederiz"
+        },
+        {
+          "step": 2,
+          "title": "İhtiyaç Belirleme",
+          "description": "Kurumunuzun özel ihtiyaçlarını ve önceliklerini belirleriz"
+        },
+        {
+          "step": 3,
+          "title": "Çözüm Tasarımı",
+          "description": "İK sistemleri ve süreçleri için özelleştirilmiş çözümler geliştiririz"
+        },
+        {
+          "step": 4,
+          "title": "Uygulama ve Eğitim",
+          "description": "Yeni sistemleri hayata geçirir, ekibinizi eğitiriz"
+        },
+        {
+          "step": 5,
+          "title": "Takip ve İyileştirme",
+          "description": "Sonuçları ölçer, geri bildirim alır ve sürekli iyileştirme sağlarız"
+        }
+      ],
+      "pricing": {
+        "type": "custom",
+        "startingFrom": null,
+        "description": "Projeye özel fiyatlandırma. İlk görüşme ücretsizdir."
+      },
+      "faq": [
+        {
+          "question": "İK danışmanlığı hangi konuları kapsıyor?",
+          "answer": "İşe alım, performans yönetimi, ücretlendirme, eğitim-geliştirme, çalışan bağlılığı, İK politikaları ve tüm operasyonel İK süreçlerini kapsıyoruz."
+        },
+        {
+          "question": "Küçük bir şirket için İK danışmanlığı gerekli mi?",
+          "answer": "Kesinlikle. Küçük şirketler için bile doğru İK uygulamaları, yetenek kaybını önler ve büyümeyi hızlandırır. KOBİ'lere özel paketlerimiz mevcuttur."
+        },
+        {
+          "question": "İK yazılımı önerisi de veriyor musunuz?",
+          "answer": "Evet, ihtiyaçlarınıza uygun İK teknolojileri konusunda da danışmanlık sağlıyoruz ve implementasyon sürecinde destek oluyoruz."
+        }
+      ],
+      "cta": {
+        "primary": "İK Analizi Talep Edin",
+        "secondary": "Detaylı Bilgi Alın"
+      },
+      "relatedServices": ["liderlik-koclugu", "orgutsel-davranis", "stratejik-yonetim"]
+    },
+    {
+      "id": "orgutsel-davranis",
+      "slug": "orgutsel-davranis",
+      "category": "communication",
+      "name": "Örgütsel Davranış ve İletişim",
+      "shortDescription": "Kurumsal kültür geliştirme, iç iletişim stratejileri, değişim yönetimi ve ekip dinamiklerini güçlendirme hizmetleri.",
+      "longDescription": "Örgütsel davranış ve iletişim danışmanlığımız, kurumunuzda pozitif bir çalışma ortamı yaratmak, etkili iletişim kanalları kurmak ve değişime uyum sağlamak için tasarlanmıştır. Sağlıklı bir kurumsal kültür, başarılı işletmelerin temel taşıdır.",
+      "icon": "MessageSquare",
+      "featured": true,
+      "order": 3,
+      "benefits": [
+        "Güçlü ve pozitif kurumsal kültür oluşturma",
+        "Etkili iç ve dış iletişim stratejileri",
+        "Değişim süreçlerinde direnci azaltma",
+        "Ekip işbirliği ve verimliliğini artırma",
+        "Çatışma yönetimi ve çözüm becerileri",
+        "Çalışan memnuniyeti ve bağlılığı"
+      ],
+      "subServices": [
+        {
+          "name": "Kurumsal Kültür Geliştirme",
+          "description": "Kurumsal değerler belirleme, kültür değişimi, çalışan deneyimi tasarımı"
+        },
+        {
+          "name": "İç İletişim Stratejileri",
+          "description": "İletişim kanalları oluşturma, şeffaf iletişim, çalışan geri bildirimi sistemleri"
+        },
+        {
+          "name": "Değişim Yönetimi",
+          "description": "Değişim stratejileri, direnç yönetimi, adaptasyon desteği, change champions programı"
+        },
+        {
+          "name": "Ekip Dinamikleri",
+          "description": "Takım kurma aktiviteleri, işbirliği geliştirme, ekip performansını artırma"
+        },
+        {
+          "name": "Çatışma Yönetimi",
+          "description": "Çatışma çözüm teknikleri, arabuluculuk, müzakere becerileri eğitimi"
+        },
+        {
+          "name": "Kurumsal İmaj ve İtibar",
+          "description": "Dış iletişim stratejileri, marka çalışanı yaklaşımı, employer branding"
+        }
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Kültür ve İletişim Tanılama",
+          "description": "Mevcut kurumsal kültürü ve iletişim yapısını analiz ederiz"
+        },
+        {
+          "step": 2,
+          "title": "Sorun Tespiti",
+          "description": "İletişim boşlukları, kültürel sorunlar ve gelişim alanlarını belirleriz"
+        },
+        {
+          "step": 3,
+          "title": "Strateji Oluşturma",
+          "description": "Hedef kültür ve iletişim modeli için yol haritası çizeriz"
+        },
+        {
+          "step": 4,
+          "title": "Uygulama Programı",
+          "description": "Eğitimler, workshoplar ve müdahale programları düzenleriz"
+        },
+        {
+          "step": 5,
+          "title": "Değerlendirme ve Sürdürülebilirlik",
+          "description": "Sonuçları ölçer ve sürdürülebilir gelişim sağlarız"
+        }
+      ],
+      "pricing": {
+        "type": "custom",
+        "startingFrom": null,
+        "description": "Kuruma özel paketler. Ücretsiz kültür analizi için başvurun."
+      },
+      "faq": [
+        {
+          "question": "Kurumsal kültür değişimi ne kadar sürer?",
+          "answer": "Kültür değişimi uzun vadeli bir süreçtir. İlk değişimler 3-6 ayda görülmeye başlar, ancak kalıcı değişim için 12-24 ay planlama yapılmalıdır."
+        },
+        {
+          "question": "Değişim yönetimi neden önemli?",
+          "answer": "Plansız değişim, çalışan direnci, motivasyon kaybı ve verimlilik düşüşüne neden olur. Profesyonel değişim yönetimi, bu riskleri minimize eder."
+        },
+        {
+          "question": "Hangi sektörlerde deneyiminiz var?",
+          "answer": "Tüm sektörlerde çalışıyoruz. Özellikle teknoloji, finans, üretim ve hizmet sektörlerinde kapsamlı deneyimimiz var."
+        }
+      ],
+      "cta": {
+        "primary": "Kültür Analizi İsteyin",
+        "secondary": "Detayları Görün"
+      },
+      "relatedServices": ["insan-kaynaklari", "liderlik-koclugu", "stratejik-yonetim"]
+    },
+    {
+      "id": "liderlik-koclugu",
+      "slug": "liderlik-koclugu",
+      "category": "leadership",
+      "name": "Liderlik ve Yönetici Koçluğu",
+      "shortDescription": "Lider geliştirme programları, executive coaching, yönetici eğitimleri ve kişisel gelişim koçluğu hizmetleri.",
+      "longDescription": "Liderlik ve yönetici koçluğu programlarımız, kurumunuzdaki liderlerin potansiyellerini maksimize etmek, liderlik becerilerini geliştirmek ve organizasyonel başarıyı artırmak için tasarlanmıştır. Bireysel koçluk seanslarından grup programlarına kadar geniş bir yelpaze sunuyoruz.",
+      "icon": "Award",
+      "featured": true,
+      "order": 4,
+      "benefits": [
+        "Etkili liderlik becerileri geliştirme",
+        "Karar verme ve stratejik düşünme yetkinliği",
+        "Ekip yönetimi ve motivasyon becerileri",
+        "İletişim ve etkileme gücü artırma",
+        "Kişisel farkındalık ve öz-yönetim",
+        "Sürdürülebilir performans artışı"
+      ],
+      "subServices": [
+        {
+          "name": "Executive Coaching",
+          "description": "Üst düzey yöneticiler için bire bir koçluk seansları, liderlik gelişimi"
+        },
+        {
+          "name": "Liderlik Eğitim Programları",
+          "description": "Grup eğitimleri, liderlik atölyeler, sertifika programları"
+        },
+        {
+          "name": "Yeni Lider Geliştirme",
+          "description": "İlk kez yönetici olanlar için adaptasyon programları"
+        },
+        {
+          "name": "Yetenek Yönetimi",
+          "description": "Yüksek potansiyelli çalışanlar için gelişim programları, succession planning"
+        },
+        {
+          "name": "Duygusal Zeka Geliştirme",
+          "description": "Duygusal zeka ölçümü ve geliştirme programları"
+        },
+        {
+          "name": "Kadın Liderlik Programları",
+          "description": "Kadın yöneticiler için özel gelişim ve mentorluk programları"
+        }
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Değerlendirme ve Hedef Belirleme",
+          "description": "360 derece değerlendirme ve kişisel gelişim hedefleri belirleme"
+        },
+        {
+          "step": 2,
+          "title": "Kişiselleştirilmiş Plan",
+          "description": "Bireyin ihtiyaçlarına özel koçluk ve gelişim planı oluşturma"
+        },
+        {
+          "step": 3,
+          "title": "Koçluk Seansları",
+          "description": "Düzenli bire bir veya grup koçluk oturumları"
+        },
+        {
+          "step": 4,
+          "title": "Uygulama ve Pratik",
+          "description": "Gerçek iş ortamında öğrenilenleri uygulama desteği"
+        },
+        {
+          "step": 5,
+          "title": "İzleme ve Değerlendirme",
+          "description": "İlerleme takibi, geri bildirim ve sürekli gelişim"
+        }
+      ],
+      "pricing": {
+        "type": "package",
+        "startingFrom": "₺15,000",
+        "description": "Bireysel koçluk paketleri aylık 15.000 TL'den başlar. Grup programları için özel fiyatlandırma.",
+        "packages": [
+          {
+            "name": "Bireysel Koçluk",
+            "price": "₺15,000/ay",
+            "sessions": "4 seans/ay",
+            "duration": "90 dakika/seans"
+          },
+          {
+            "name": "Liderlik Programı",
+            "price": "Projeye Özel",
+            "sessions": "3 ay program",
+            "duration": "Grup ve bireysel seanslar"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "Koçluk ve danışmanlık arasındaki fark nedir?",
+          "answer": "Danışmanlık çözüm önerileri sunarken, koçluk kişinin kendi çözümlerini bulmasını sağlar. Koçluk, potansiyeli açığa çıkarır ve sürdürülebilir gelişim sağlar."
+        },
+        {
+          "question": "Bir koçluk programı ne kadar sürer?",
+          "answer": "Tipik bir executive coaching programı 6-12 ay sürer. Ancak ihtiyaca göre daha kısa veya uzun programlar da tasarlanabilir."
+        },
+        {
+          "question": "Koçluğun yatırım getirisi nedir?",
+          "answer": "Araştırmalar, koçluk yatırımının 5-7 kat geri dönüş sağladığını gösteriyor. Liderlik gelişimi, ekip performansı ve organizasyonel sonuçlarda ölçülebilir iyileşmeler sağlar."
+        }
+      ],
+      "cta": {
+        "primary": "Ücretsiz Görüşme Ayarlayın",
+        "secondary": "Program Detayları"
+      },
+      "relatedServices": ["insan-kaynaklari", "orgutsel-davranis", "stratejik-yonetim"]
+    },
+    {
+      "id": "kurumsal-etik",
+      "slug": "kurumsal-etik",
+      "category": "ethics",
+      "name": "Kurumsal Etik ve Sosyal Sorumluluk",
+      "shortDescription": "Etik kod oluşturma, sosyal sorumluluk projeleri, sürdürülebilirlik stratejileri ve kurumsal uyum danışmanlığı.",
+      "longDescription": "Kurumsal etik ve sosyal sorumluluk danışmanlığımız, işletmenizin sürdürülebilir ve sorumlu bir şekilde büyümesini sağlamak için tasarlanmıştır. Etik değerlere dayalı iş yapış şekilleri, uzun vadeli başarının ve itibarın temelidir.",
+      "icon": "Heart",
+      "featured": false,
+      "order": 5,
+      "benefits": [
+        "Güçlü kurumsal itibar ve marka değeri",
+        "Yasal ve etik uyumluluk",
+        "Paydaş güveni ve bağlılığı artırma",
+        "Sürdürülebilir iş modelleri oluşturma",
+        "Sosyal etki ve toplumsal katkı",
+        "Çalışan gururu ve motivasyonu"
+      ],
+      "subServices": [
+        {
+          "name": "Etik Kod ve Politikalar",
+          "description": "Kurumsal etik kod hazırlama, davranış kuralları, etik politikaları oluşturma"
+        },
+        {
+          "name": "Sürdürülebilirlik Stratejisi",
+          "description": "ESG stratejileri, sürdürülebilirlik raporlaması, çevresel ve sosyal etki yönetimi"
+        },
+        {
+          "name": "Kurumsal Sosyal Sorumluluk (KSS)",
+          "description": "KSS projeleri tasarımı, toplumsal fayda programları, gönüllülük programları"
+        },
+        {
+          "name": "Uyum ve Risk Yönetimi",
+          "description": "Compliance programları, anti-yolsuzluk politikaları, risk değerlendirmesi"
+        },
+        {
+          "name": "Paydaş Yönetimi",
+          "description": "Paydaş analizi, şeffaflık raporlaması, iletişim stratejileri"
+        },
+        {
+          "name": "Etik Eğitim Programları",
+          "description": "Çalışanlar için etik farkındalık eğitimleri, etik karar verme workshopları"
+        }
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Mevcut Durum Değerlendirmesi",
+          "description": "Kurumsal etik ve sosyal sorumluluk uygulamalarınızı analiz ederiz"
+        },
+        {
+          "step": 2,
+          "title": "Paydaş Beklentileri",
+          "description": "Paydaş beklentilerini ve öncelikleri belirleriz"
+        },
+        {
+          "step": 3,
+          "title": "Strateji ve Politika Geliştirme",
+          "description": "Etik kod, KSS stratejisi ve sürdürülebilirlik politikaları oluştururuz"
+        },
+        {
+          "step": 4,
+          "title": "Uygulama ve Entegrasyon",
+          "description": "Politikaları iş süreçlerine entegre eder, eğitimler düzenleriz"
+        },
+        {
+          "step": 5,
+          "title": "İzleme ve Raporlama",
+          "description": "Performans ölçümü, raporlama ve sürekli iyileştirme"
+        }
+      ],
+      "pricing": {
+        "type": "custom",
+        "startingFrom": null,
+        "description": "Proje bazlı fiyatlandırma. Detaylı teklif için iletişime geçin."
+      },
+      "faq": [
+        {
+          "question": "KSS neden önemli?",
+          "answer": "Kurumsal Sosyal Sorumluluk, marka itibarını güçlendirir, müşteri sadakatini artırır, yatırımcı ilgisini çeker ve çalışan motivasyonunu yükseltir. Ayrıca sürdürülebilir büyüme için kritiktir."
+        },
+        {
+          "question": "Sürdürülebilirlik raporlaması zorunlu mu?",
+          "answer": "Bazı sektörler ve şirket büyüklükleri için yasal zorunluluk var. Ancak zorunlu olmasa bile, paydaş beklentileri nedeniyle giderek daha önemli hale geliyor."
+        },
+        {
+          "question": "Hangi KSS projelerini önerirsiniz?",
+          "answer": "Kurumunuzun sektörüne, değerlerine ve kaynaklarına göre özelleştirilmiş projeler öneririz. Eğitim, çevre, sosyal kapsayıcılık gibi alanlarda çalışabiliriz."
+        }
+      ],
+      "cta": {
+        "primary": "Etik Analizi Talep Edin",
+        "secondary": "Hizmet Detayları"
+      },
+      "relatedServices": ["stratejik-yonetim", "kamu-yonetimi", "orgutsel-davranis"]
+    },
+    {
+      "id": "kamu-yonetimi",
+      "slug": "kamu-yonetimi",
+      "category": "public",
+      "name": "Belediye ve Kamu Kurumları Danışmanlığı",
+      "shortDescription": "Kamu kurumları için stratejik planlama, hizmet kalitesi iyileştirme, e-belediyecilik ve kurumsal kapasite geliştirme hizmetleri.",
+      "longDescription": "Belediye ve kamu kurumları danışmanlığımız, kamu hizmetlerinin kalitesini artırmak, vatandaş memnuniyetini yükseltmek ve kurumsal kapasiteyi güçlendirmek için tasarlanmıştır. Kamu yönetiminde modern yaklaşımlar ve en iyi uygulamalarla kurumunuza değer katıyoruz.",
+      "icon": "Building",
+      "featured": true,
+      "order": 6,
+      "benefits": [
+        "Kamu hizmetlerinde kalite ve verimlilik artışı",
+        "Vatandaş memnuniyeti ve güven oluşturma",
+        "Şeffaf ve hesap verebilir yönetim",
+        "Dijital dönüşüm ve e-devlet uygulamaları",
+        "Stratejik planlama ve performans yönetimi",
+        "Kurumsal kapasite ve insan kaynakları gelişimi"
+      ],
+      "subServices": [
+        {
+          "name": "Stratejik Planlama (Kamu)",
+          "description": "5 yıllık stratejik plan hazırlama, performans programları, faaliyet raporları"
+        },
+        {
+          "name": "E-Belediyecilik ve Dijital Dönüşüm",
+          "description": "Dijital hizmet tasarımı, online başvuru sistemleri, akıllı şehir çözümleri"
+        },
+        {
+          "name": "Hizmet Kalitesi İyileştirme",
+          "description": "Süreç iyileştirme, vatandaş odaklı hizmet tasarımı, kalite yönetim sistemleri"
+        },
+        {
+          "name": "Kurumsal Kapasite Geliştirme",
+          "description": "Organizasyon yapısı tasarımı, görev tanımları, yetki devri, iş akışları"
+        },
+        {
+          "name": "Vatandaş Katılımı",
+          "description": "Katılımcı yönetim modelleri, anket ve araştırmalar, danışma mekanizmaları"
+        },
+        {
+          "name": "Proje Yönetimi Danışmanlığı",
+          "description": "AB projeleri, büyük ölçekli yatırım projeleri, proje döngüsü yönetimi"
+        }
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Kurumsal Tanı ve Analiz",
+          "description": "Mevcut durum analizi, SWOT, paydaş analizi ve ihtiyaç tespiti"
+        },
+        {
+          "step": 2,
+          "title": "Stratejik Planlama",
+          "description": "Vizyon-misyon, hedefler, stratejiler ve eylem planları oluşturma"
+        },
+        {
+          "step": 3,
+          "title": "Süreç ve Sistem Tasarımı",
+          "description": "İş süreçleri, organizasyon yapısı ve sistemlerin tasarlanması"
+        },
+        {
+          "step": 4,
+          "title": "Uygulama ve Eğitim",
+          "description": "Planların hayata geçirilmesi, personel eğitimleri ve değişim yönetimi"
+        },
+        {
+          "step": 5,
+          "title": "İzleme ve Raporlama",
+          "description": "Performans izleme, raporlama ve sürekli iyileştirme"
+        }
+      ],
+      "pricing": {
+        "type": "custom",
+        "startingFrom": null,
+        "description": "Kamu ihale prosedürlerine uygun fiyatlandırma. Teknik şartname ve teklif için iletişime geçin."
+      },
+      "faq": [
+        {
+          "question": "Kamu ihalelerine katılıyor musunuz?",
+          "answer": "Evet, kamu ihale mevzuatına uygun olarak danışmanlık hizmeti ihalelerine katılıyoruz. Referanslarımız ve deneyimimiz mevcuttur."
+        },
+        {
+          "question": "Stratejik plan hazırlama süreci nasıl işliyor?",
+          "answer": "5018 sayılı Kanun ve Kalkınma Bakanlığı rehberine uygun olarak, katılımcı bir süreçle stratejik plan hazırlıyoruz. Ortalama 4-6 ay sürer."
+        },
+        {
+          "question": "Hangi kamu kurumlarıyla çalıştınız?",
+          "answer": "Belediyeler, il özel idareleri, kamu iktisadi teşebbüsleri ve çeşitli kamu kurumlarıyla çalıştık. Referans listesi paylaşılabilir."
+        }
+      ],
+      "cta": {
+        "primary": "Teklif İsteyin",
+        "secondary": "Referansları Görün"
+      },
+      "relatedServices": ["stratejik-yonetim", "kurumsal-etik", "orgutsel-davranis"]
+    },
+    {
+      "id": "girisimcilik",
+      "slug": "girisimcilik",
+      "category": "entrepreneurship",
+      "name": "Girişimcilik Danışmanlığı",
+      "shortDescription": "Startup kuruluş danışmanlığı, iş planı hazırlama, yatırım hazırlığı, ölçeklendirme stratejileri ve mentorluk hizmetleri.",
+      "longDescription": "Girişimcilik danışmanlığımız, yeni bir iş kurmak isteyen girişimcilere ve büyümek isteyen startup'lara özel olarak tasarlanmıştır. İş fikirinden ürün lansmanına, yatırım almadan ölçeklendirmeye kadar tüm süreçte yanınızdayız.",
+      "icon": "Rocket",
+      "featured": false,
+      "order": 7,
+      "benefits": [
+        "Doğru iş modeli tasarımı ve validasyon",
+        "Yatırımcılara hazırlık ve pitch desteği",
+        "Ölçeklenebilir büyüme stratejileri",
+        "Operasyonel süreçlerin kurulması",
+        "Network ve ekosistem bağlantıları",
+        "Sürdürülebilir rekabet avantajı"
+      ],
+      "subServices": [
+        {
+          "name": "İş Planı ve Model Tasarımı",
+          "description": "Business plan hazırlama, business model canvas, finansal projeksiyon"
+        },
+        {
+          "name": "MVP Geliştirme Stratejisi",
+          "description": "Minimum Viable Product tasarımı, product-market fit, lean startup metodolojisi"
+        },
+        {
+          "name": "Yatırım Hazırlığı",
+          "description": "Pitch deck hazırlama, yatırımcı sunumları, due diligence hazırlığı"
+        },
+        {
+          "name": "Büyüme ve Ölçeklendirme",
+          "description": "Growth hacking stratejileri, pazar genişleme, operasyonel verimlilik"
+        },
+        {
+          "name": "Girişimci Mentorluk",
+          "description": "Bire bir mentorluk, stratejik rehberlik, problem çözme desteği"
+        },
+        {
+          "name": "Ekip Kurma ve Yönetişim",
+          "description": "Kurucu ortaklık anlaşmaları, ekip oluşturma, hisse yapısı danışmanlığı"
+        }
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Fikir Değerlendirme",
+          "description": "İş fikrinizi analiz eder, pazar araştırması yapar, potansiyeli değerlendiririz"
+        },
+        {
+          "step": 2,
+          "title": "İş Modeli Geliştirme",
+          "description": "Gelir modeli, müşteri segmentleri, değer önerisi belirlenir"
+        },
+        {
+          "step": 3,
+          "title": "Strateji ve Planlama",
+          "description": "Go-to-market stratejisi, iş planı ve yol haritası oluşturulur"
+        },
+        {
+          "step": 4,
+          "title": "Uygulama Desteği",
+          "description": "MVP geliştirme, pilot uygulama ve iterasyon sürecinde destek"
+        },
+        {
+          "step": 5,
+          "title": "Büyüme ve Mentorluk",
+          "description": "Sürekli mentorluk, büyüme desteği ve ölçeklendirme rehberliği"
+        }
+      ],
+      "pricing": {
+        "type": "flexible",
+        "startingFrom": "₺10,000",
+        "description": "Girişimcilere özel esnek ödeme seçenekleri. İlk danışmanlık ücretsizdir.",
+        "packages": [
+          {
+            "name": "Starter Paket",
+            "price": "₺10,000",
+            "duration": "1 ay",
+            "includes": "İş planı, pazar araştırması, 4 mentorluk seansı"
+          },
+          {
+            "name": "Growth Paket",
+            "price": "₺25,000",
+            "duration": "3 ay",
+            "includes": "Tam kapsamlı danışmanlık, yatırım hazırlığı, sürekli mentorluk"
+          }
+        ]
+      },
+      "faq": [
+        {
+          "question": "İş fikrim henüz tam oturmadı, danışmanlık alabilir miyim?",
+          "answer": "Kesinlikle! Fikir aşamasındaki girişimcilere de danışmanlık veriyoruz. İş fikrinizi birlikte geliştiririz."
+        },
+        {
+          "question": "Yatırım bulmamda yardımcı olur musunuz?",
+          "answer": "Evet, yatırım hazırlığı sürecinde pitch deck hazırlama, finansal model oluşturma ve yatırımcı networkümüz ile bağlantı kurma konularında destek oluyoruz."
+        },
+        {
+          "question": "Online danışmanlık veriyor musunuz?",
+          "answer": "Evet, uzaktan çalışma modelimiz sayesinde Türkiye'nin her yerinden girişimcilere online mentorluk ve danışmanlık sağlıyoruz."
+        }
+      ],
+      "cta": {
+        "primary": "Ücretsiz Fikir Değerlendirmesi",
+        "secondary": "Paket Detayları"
+      },
+      "relatedServices": ["stratejik-yonetim", "insan-kaynaklari", "liderlik-koclugu"]
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-04",
+    "totalServices": 7,
+    "language": "tr"
+  }
+}

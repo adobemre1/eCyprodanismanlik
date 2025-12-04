@@ -1,0 +1,291 @@
+{
+  "categories": [
+    {
+      "id": "stratejik-yonetim",
+      "name": "Stratejik Yönetim",
+      "slug": "stratejik-yonetim",
+      "description": "Stratejik planlama, kurumsal yönetim ve rekabet stratejileri",
+      "icon": "Target",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "liderlik",
+      "name": "Liderlik",
+      "slug": "liderlik",
+      "description": "Liderlik becerileri, yönetici gelişimi ve koçluk",
+      "icon": "Award",
+      "color": "#F59E0B"
+    },
+    {
+      "id": "insan-kaynaklari",
+      "name": "İnsan Kaynakları",
+      "slug": "insan-kaynaklari",
+      "description": "İK trendleri, yetenek yönetimi ve performans",
+      "icon": "Users",
+      "color": "#10B981"
+    },
+    {
+      "id": "kurumsal-kultur",
+      "name": "Kurumsal Kültür",
+      "slug": "kurumsal-kultur",
+      "description": "Organizasyon kültürü, değişim yönetimi ve iletişim",
+      "icon": "MessageSquare",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "dijital-donusum",
+      "name": "Dijital Dönüşüm",
+      "slug": "dijital-donusum",
+      "description": "Dijitalleşme, inovasyon ve teknoloji yönetimi",
+      "icon": "Zap",
+      "color": "#EC4899"
+    },
+    {
+      "id": "kamu-yonetimi",
+      "name": "Kamu Yönetimi",
+      "slug": "kamu-yonetimi",
+      "description": "Belediyecilik, kamu kurumları ve kamu politikaları",
+      "icon": "Building",
+      "color": "#6366F1"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "slug": "basarili-stratejik-plan-nasil-hazirlanir",
+      "title": "Başarılı Bir Stratejik Plan Nasıl Hazırlanır?",
+      "excerpt": "Stratejik planlama, kurumların uzun vadeli hedeflerine ulaşması için kritik bir araçtır. Bu yazıda, etkili bir stratejik plan hazırlamanın adımlarını ve püf noktalarını ele alıyoruz.",
+      "content": "Stratejik planlama, bir kurumun nereye gitmek istediğini, nasıl oraya ulaşacağını ve başarısını nasıl ölçeceğini belirleyen sistematik bir süreçtir...",
+      "category": "stratejik-yonetim",
+      "author": {
+        "name": "Dr. Emre Öztürk",
+        "role": "Kurucu Ortak",
+        "avatar": "/assets/team/emre.jpg"
+      },
+      "publishedAt": "2025-11-15",
+      "readTime": 8,
+      "featured": true,
+      "featuredImage": "/assets/blog/stratejik-plan.jpg",
+      "tags": ["stratejik planlama", "yönetim", "kurumsal strateji"],
+      "seo": {
+        "metaTitle": "Başarılı Stratejik Plan Nasıl Hazırlanır? | eCyPro Blog",
+        "metaDescription": "Etkili stratejik plan hazırlama rehberi. SWOT analizi, vizyon-misyon belirleme ve uygulama süreçleri hakkında kapsamlı bilgi.",
+        "keywords": ["stratejik plan", "stratejik planlama", "kurumsal strateji", "SWOT analizi"]
+      }
+    },
+    {
+      "id": "2",
+      "slug": "liderlik-becerileri-gelistirmenin-5-yolu",
+      "title": "Liderlik Becerilerini Geliştirmenin 5 Etkili Yolu",
+      "excerpt": "Etkili liderlik doğuştan gelmez, öğrenilir ve geliştirilir. İşte liderlik becerilerinizi bir üst seviyeye taşıyacak 5 kanıtlanmış yöntem.",
+      "content": "Liderlik, günümüz iş dünyasında en çok talep edilen beceriler arasındadır. Peki, liderlik becerileri nasıl geliştirilebilir?...",
+      "category": "liderlik",
+      "author": {
+        "name": "Mehmet Kaya",
+        "role": "Executive Coach",
+        "avatar": "/assets/team/mehmet.jpg"
+      },
+      "publishedAt": "2025-11-10",
+      "readTime": 6,
+      "featured": true,
+      "featuredImage": "/assets/blog/liderlik-becerileri.jpg",
+      "tags": ["liderlik", "yöneticilik", "kişisel gelişim", "koçluk"],
+      "seo": {
+        "metaTitle": "Liderlik Becerilerini Geliştirmenin 5 Yolu | eCyPro Blog",
+        "metaDescription": "Liderlik becerilerinizi nasıl geliştirebilirsiniz? Duygusal zekadan stratejik düşünmeye, etkili liderlik için 5 pratik yöntem.",
+        "keywords": ["liderlik becerileri", "lider olmak", "yöneticilik", "executive coaching"]
+      }
+    },
+    {
+      "id": "3",
+      "slug": "2025-insan-kaynaklari-trendleri",
+      "title": "2025 Yılında İnsan Kaynakları Trendleri",
+      "excerpt": "Hibrit çalışma, yapay zeka destekli İK ve çalışan deneyimi... 2025 yılında İK dünyasını şekillendirecek en önemli trendler.",
+      "content": "İnsan kaynakları yönetimi, teknoloji ve çalışan beklentilerindeki değişimlerle sürekli evrim geçiriyor. 2025 yılında dikkat edilmesi gereken trendler...",
+      "category": "insan-kaynaklari",
+      "author": {
+        "name": "Prof. Dr. Ayşe Yılmaz",
+        "role": "İK Uzmanı",
+        "avatar": "/assets/team/ayse.jpg"
+      },
+      "publishedAt": "2025-11-05",
+      "readTime": 10,
+      "featured": true,
+      "featuredImage": "/assets/blog/ik-trendleri-2025.jpg",
+      "tags": ["İK", "insan kaynakları", "trendler", "2025"],
+      "seo": {
+        "metaTitle": "2025 İnsan Kaynakları Trendleri | eCyPro Blog",
+        "metaDescription": "2025'te İK dünyasını şekillendirecek trendler: Yapay zeka, hibrit çalışma, çalışan deneyimi ve daha fazlası.",
+        "keywords": ["İK trendleri", "2025 insan kaynakları", "çalışan deneyimi", "hibrit çalışma"]
+      }
+    },
+    {
+      "id": "4",
+      "slug": "kurumsal-kultur-nasil-geliştirilir",
+      "title": "Güçlü Bir Kurumsal Kültür Nasıl Geliştirilir?",
+      "excerpt": "Kurumsal kültür, bir şirketin DNA'sıdır. Pozitif ve güçlü bir kültür oluşturmak için yapılması gerekenler ve dikkat edilmesi gereken noktalar.",
+      "content": "Kurumsal kültür, bir organizasyonun paylaştığı değerler, inançlar, normlar ve davranışların toplamıdır. Güçlü bir kültür nasıl inşa edilir?...",
+      "category": "kurumsal-kultur",
+      "author": {
+        "name": "Dr. Emre Öztürk",
+        "role": "Kurucu Ortak",
+        "avatar": "/assets/team/emre.jpg"
+      },
+      "publishedAt": "2025-10-28",
+      "readTime": 7,
+      "featured": false,
+      "featuredImage": "/assets/blog/kurumsal-kultur.jpg",
+      "tags": ["kurumsal kültür", "organizasyon", "değişim yönetimi"],
+      "seo": {
+        "metaTitle": "Güçlü Kurumsal Kültür Nasıl Geliştirilir? | eCyPro Blog",
+        "metaDescription": "Kurumsal kültür geliştirme rehberi. Değerler belirleme, liderlik taahhüdü ve kültür ölçümlemesi stratejileri.",
+        "keywords": ["kurumsal kültür", "şirket kültürü", "organizasyon geliştirme"]
+      }
+    },
+    {
+      "id": "5",
+      "slug": "dijital-donusum-liderlik-stratejileri",
+      "title": "Dijital Dönüşümde Liderlik: Başarı İçin Stratejiler",
+      "excerpt": "Dijital dönüşüm sadece teknoloji değil, kültür ve liderlik meselesidir. Dijital çağda liderlik nasıl olmalı? Başarı için neler yapılmalı?",
+      "content": "Dijital dönüşüm, kurumların teknoloji kullanarak iş modellerini, süreçlerini ve müşteri deneyimlerini yeniden şekillendirme sürecidir...",
+      "category": "dijital-donusum",
+      "author": {
+        "name": "Mehmet Kaya",
+        "role": "Executive Coach",
+        "avatar": "/assets/team/mehmet.jpg"
+      },
+      "publishedAt": "2025-10-20",
+      "readTime": 9,
+      "featured": false,
+      "featuredImage": "/assets/blog/dijital-liderlik.jpg",
+      "tags": ["dijital dönüşüm", "liderlik", "inovasyon", "teknoloji"],
+      "seo": {
+        "metaTitle": "Dijital Dönüşümde Liderlik Stratejileri | eCyPro Blog",
+        "metaDescription": "Dijital çağda liderlik nasıl olmalı? Teknoloji adaptasyonu, kültür değişimi ve inovasyon stratejileri.",
+        "keywords": ["dijital dönüşüm", "dijital liderlik", "inovasyon", "teknoloji yönetimi"]
+      }
+    },
+    {
+      "id": "6",
+      "slug": "performans-yonetimi-nedir-nasil-yapilir",
+      "title": "Performans Yönetimi Nedir ve Nasıl Yapılır?",
+      "excerpt": "Etkili performans yönetimi sistemi, çalışan motivasyonunu ve verimliliği artırır. Modern performans yönetimi yaklaşımları ve uygulama adımları.",
+      "content": "Performans yönetimi, çalışanların hedeflerini belirleme, performanslarını ölçme ve gelişimlerini destekleme sürecidir...",
+      "category": "insan-kaynaklari",
+      "author": {
+        "name": "Prof. Dr. Ayşe Yılmaz",
+        "role": "İK Uzmanı",
+        "avatar": "/assets/team/ayse.jpg"
+      },
+      "publishedAt": "2025-10-15",
+      "readTime": 7,
+      "featured": false,
+      "featuredImage": "/assets/blog/performans-yonetimi.jpg",
+      "tags": ["performans yönetimi", "İK", "KPI", "360 derece"],
+      "seo": {
+        "metaTitle": "Performans Yönetimi Nedir? Nasıl Yapılır? | eCyPro Blog",
+        "metaDescription": "Performans yönetimi sistemi kurma rehberi. KPI belirleme, 360 derece değerlendirme ve sürekli geri bildirim stratejileri.",
+        "keywords": ["performans yönetimi", "KPI", "360 derece değerlendirme", "çalışan performansı"]
+      }
+    },
+    {
+      "id": "7",
+      "slug": "degisim-yonetimi-rehberi",
+      "title": "Değişim Yönetimi: Başarılı Dönüşüm için Rehber",
+      "excerpt": "Organizasyonlarda değişim yönetimi süreci nasıl yönetilir? Direnç azaltma, paydaş yönetimi ve başarılı transformasyon stratejileri.",
+      "content": "Değişim yönetimi, kurumların yeni süreçlere, teknolojilere veya stratejilere geçişini kolaylaştıran sistematik yaklaşımdır...",
+      "category": "kurumsal-kultur",
+      "author": {
+        "name": "Dr. Emre Öztürk",
+        "role": "Kurucu Ortak",
+        "avatar": "/assets/team/emre.jpg"
+      },
+      "publishedAt": "2025-10-05",
+      "readTime": 8,
+      "featured": false,
+      "featuredImage": "/assets/blog/degisim-yonetimi.jpg",
+      "tags": ["değişim yönetimi", "organizasyonel değişim", "change management"],
+      "seo": {
+        "metaTitle": "Değişim Yönetimi Rehberi | eCyPro Blog",
+        "metaDescription": "Başarılı değişim yönetimi için adım adım rehber. Kotter'ın 8 adımı, direnç yönetimi ve paydaş analizi.",
+        "keywords": ["değişim yönetimi", "change management", "organizasyonel değişim", "dönüşüm"]
+      }
+    },
+    {
+      "id": "8",
+      "slug": "kamu-kurumlarinda-stratejik-planlama",
+      "title": "Kamu Kurumlarında Stratejik Planlama Süreci",
+      "excerpt": "5018 sayılı kanun kapsamında kamu kurumları için stratejik plan hazırlama rehberi. Süreç adımları, dikkat edilmesi gerekenler.",
+      "content": "Kamu kurumlarında stratejik planlama, 5018 sayılı Kamu Mali Yönetimi ve Kontrol Kanunu çerçevesinde yapılır...",
+      "category": "kamu-yonetimi",
+      "author": {
+        "name": "Zeynep Arslan",
+        "role": "Kamu Yönetimi Uzmanı",
+        "avatar": "/assets/team/zeynep.jpg"
+      },
+      "publishedAt": "2025-09-25",
+      "readTime": 10,
+      "featured": false,
+      "featuredImage": "/assets/blog/kamu-stratejik-plan.jpg",
+      "tags": ["kamu yönetimi", "stratejik planlama", "belediye", "5018"],
+      "seo": {
+        "metaTitle": "Kamu Kurumlarında Stratejik Planlama | eCyPro Blog",
+        "metaDescription": "5018 sayılı kanun kapsamında stratejik plan hazırlama. Kamu kurumları için adım adım rehber ve dikkat edilecekler.",
+        "keywords": ["kamu stratejik planı", "5018", "belediye stratejik plan", "performans programı"]
+      }
+    },
+    {
+      "id": "9",
+      "slug": "startup-icin-ilk-adimlar",
+      "title": "Başarılı Startup için İlk Adımlar: Kapsamlı Rehber",
+      "excerpt": "Startup kurmak isteyenler için başlangıç rehberi. İş fikri validasyonu, MVP geliştirme, yatırım alma ve büyüme stratejileri.",
+      "content": "Bir startup kurmak heyecan verici ama zorlayıcıdır. Doğru adımlarla başlamak, başarı şansını önemli ölçüde artırır...",
+      "category": "dijital-donusum",
+      "author": {
+        "name": "Can Demirtaş",
+        "role": "Dijital Dönüşüm Uzmanı",
+        "avatar": "/assets/team/can.jpg"
+      },
+      "publishedAt": "2025-09-15",
+      "readTime": 12,
+      "featured": false,
+      "featuredImage": "/assets/blog/startup-rehber.jpg",
+      "tags": ["startup", "girişimcilik", "MVP", "yatırım"],
+      "seo": {
+        "metaTitle": "Başarılı Startup İçin İlk Adımlar | eCyPro Blog",
+        "metaDescription": "Startup kurma rehberi. İş fikri validasyonu, MVP, business plan, pitch deck ve yatırım alma süreçleri.",
+        "keywords": ["startup nasıl kurulur", "girişimcilik", "MVP", "startup yatırımı"]
+      }
+    },
+    {
+      "id": "10",
+      "slug": "calisan-bagliligi-nasil-artirilir",
+      "title": "Çalışan Bağlılığını Artırmanın 7 Etkili Yolu",
+      "excerpt": "Çalışan bağlılığı, kurumsal başarının anahtarıdır. Bağlılığı artırmak için kanıtlanmış stratejiler ve uygulamalar.",
+      "content": "Çalışan bağlılığı (employee engagement), çalışanların işlerine ve kurumlarına duygusal olarak bağlanma derecesidir...",
+      "category": "insan-kaynaklari",
+      "author": {
+        "name": "Prof. Dr. Ayşe Yılmaz",
+        "role": "İK Uzmanı",
+        "avatar": "/assets/team/ayse.jpg"
+      },
+      "publishedAt": "2025-09-01",
+      "readTime": 9,
+      "featured": false,
+      "featuredImage": "/assets/blog/calisan-bagliligi.jpg",
+      "tags": ["çalışan bağlılığı", "İK", "motivasyon", "engagement"],
+      "seo": {
+        "metaTitle": "Çalışan Bağlılığını Artırmanın 7 Yolu | eCyPro Blog",
+        "metaDescription": "Çalışan bağlılığı (employee engagement) nasıl artırılır? Motivasyon, recognition ve kültür stratejileri.",
+        "keywords": ["çalışan bağlılığı", "employee engagement", "çalışan motivasyonu", "İK stratejileri"]
+      }
+    }
+  ],
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-04",
+    "totalPosts": 10,
+    "totalCategories": 6,
+    "language": "tr"
+  }
+}
