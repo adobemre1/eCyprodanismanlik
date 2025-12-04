@@ -28,7 +28,10 @@
       "components/sections/Insights.tsx",
       "components/common/FadeIn.tsx",
       "components/common/BackToTop.tsx",
-      "lib/analytics.ts"
+      "components/common/ErrorBoundary.tsx",
+      "lib/analytics.ts",
+      "lib/useLanguage.ts",
+      "lib/useCountUp.ts"
     ],
     "constraints": [
       "Varolan premium tasarım dili ve eCyPro.com hizmet mimarisi korunacak.",
@@ -36,6 +39,7 @@
       "Kod yapısı anlaşılır klasör hiyerarşisi ile organize edilecek.",
       "Tüm değişiklikler mobil ve masaüstü için tam duyarlı (responsive) çalışacak."
     ],
+    "status": "Production Ready",
     "home_qa_checklist": [
       {
         "area": "TrustBar",
@@ -48,13 +52,27 @@
         "expected": "Sağ altta buton belirmeli ve tıklayınca en başa dönmeli."
       },
       {
-        "area": "SEO/A11y",
-        "task": "Dili EN yap ve HTML elementini incele.",
-        "expected": "lang='en' olmalı."
+        "area": "I18N",
+        "task": "Dil değiştirme butonuna basıldığında tüm metinler (Hero, Hizmetler, Footer) değişiyor mu?",
+        "expected": "Anlık olarak TR/EN geçişi sağlanmalı."
+      },
+      {
+        "area": "KPI",
+        "task": "KPI sayıları 0'dan yukarı doğru animasyonlu geliyor mu?",
+        "expected": "Sayfa yüklendiğinde veya scroll edildiğinde sayılar artarak gelmeli."
+      },
+      {
+        "area": "KPI",
+        "task": "Mobil görünümde KPI kartları tek veya iki sütun mu?",
+        "expected": "Metinler sıkışmamalı, düzen akıcı olmalı."
+      },
+      {
+        "area": "Error Handling",
+        "task": "Uygulama patladığında ErrorBoundary devreye giriyor mu?",
+        "expected": "Beyaz ekran yerine şık bir hata mesajı görünmeli."
       }
     ]
   },
-  "todos": [],
   "requestFramePermissions": [],
   "name": "",
   "description": ""

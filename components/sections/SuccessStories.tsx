@@ -1,10 +1,12 @@
-
 import React from 'react';
-import { CASE_STUDIES, FALLBACK_MESSAGES } from '../../constants';
+import { CASE_STUDIES, SUCCESS_STORIES_COPY } from '../../constants';
 import { FadeIn } from '../common/FadeIn';
 import { trackEvent } from '../../lib/analytics';
+import { useLanguage } from '../../lib/useLanguage';
 
 export const SuccessStories: React.FC = () => {
+  const { lang } = useLanguage();
+
   if (!CASE_STUDIES || CASE_STUDIES.length === 0) {
     return null;
   }
@@ -16,17 +18,17 @@ export const SuccessStories: React.FC = () => {
           <div className="mb-20 flex flex-col md:flex-row justify-between items-end border-b border-slate-100 pb-8">
             <div>
                <span className="text-secondary font-bold uppercase tracking-widest text-xs mb-4 block">
-                 Referans Projeler
+                 {SUCCESS_STORIES_COPY.badge[lang]}
                </span>
                <h2 id="cases-heading" className="text-h2-d font-serif font-bold text-primary mb-4">
-                Başarı Hikayeleri
+                {SUCCESS_STORIES_COPY.title[lang]}
               </h2>
                <p className="text-slate-600 font-light text-lg max-w-xl">
-                 Danışmanlık, etkinlik ve dijital hizmetlerimizle farklı sektörlerde yarattığımız somut değerler.
+                 {SUCCESS_STORIES_COPY.description[lang]}
                </p>
             </div>
             <a href="#" className="text-primary font-bold hover:text-secondary transition-colors mt-6 md:mt-0 uppercase tracking-widest text-xs border-b border-slate-200 pb-1 hover:border-secondary">
-              Tüm Projeleri Gör
+              {SUCCESS_STORIES_COPY.viewAll[lang]}
             </a>
           </div>
         </FadeIn>
@@ -48,39 +50,27 @@ export const SuccessStories: React.FC = () => {
                   <div className="absolute inset-0 bg-primary/20 group-hover:bg-primary/10 transition-colors duration-500"></div>
                   <div className="absolute top-4 left-4">
                     <span className="bg-white/95 backdrop-blur text-primary text-[10px] font-bold px-3 py-1.5 rounded uppercase tracking-widest shadow-sm">
-                      {study.sector}
+                      {study.sector[lang]}
                     </span>
                   </div>
                 </div>
                 
                 <div className="p-8 flex flex-col flex-grow bg-white">
-                  <div className="mb-4">
-                    <h3 className="text-lg font-bold text-primary mb-1 group-hover:text-secondary transition-colors">
-                      {study.client}
-                    </h3>
-                    <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">
-                       {study.category}
-                    </span>
+                  <div className="text-3xl font-serif font-bold text-secondary mb-2">
+                    {study.result[lang]}
                   </div>
-
-                  <div className="space-y-4 mb-6">
-                    <div>
-                      <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Problem</h4>
-                      <p className="text-slate-600 text-sm font-light leading-snug line-clamp-2" title={study.challenge}>{study.challenge}</p>
-                    </div>
-                    <div>
-                      <h4 className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">Çözüm</h4>
-                      <p className="text-slate-600 text-sm font-light leading-snug line-clamp-2" title={study.solution}>{study.solution}</p>
-                    </div>
+                  <h3 className="text-lg font-bold text-primary mb-2 group-hover:text-secondary transition-colors">
+                    {study.client}
+                  </h3>
+                  <div className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
+                     {study.category[lang]}
                   </div>
-
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6 font-light">
+                    {study.description[lang]}
+                  </p>
                   <div className="mt-auto pt-4 border-t border-slate-50">
-                     <h4 className="text-[10px] font-bold text-secondary uppercase tracking-wider mb-1">Sonuç</h4>
-                    <div className="text-2xl font-serif font-bold text-primary group-hover:text-secondary transition-colors">
-                      {study.result}
-                    </div>
-                    <span className="inline-flex items-center text-xs font-bold text-primary uppercase tracking-wider mt-4 group-hover:ml-2 transition-all duration-300">
-                      Detaylar <span className="ml-2">→</span>
+                    <span className="inline-flex items-center text-xs font-bold text-primary uppercase tracking-wider group-hover:ml-2 transition-all duration-300">
+                      {SUCCESS_STORIES_COPY.details[lang]} <span className="ml-2">→</span>
                     </span>
                   </div>
                 </div>

@@ -1,19 +1,22 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { SERVICE_CATEGORIES } from '../constants';
+import { SERVICE_CATEGORIES, SERVICES_COPY } from '../constants';
 import { FadeIn } from './FadeIn';
+import { useLanguage } from '../lib/useLanguage';
 
 export const Services: React.FC = () => {
+  const { lang } = useLanguage();
+
   return (
     <section id="services" className="py-24 lg:py-32 bg-neutral relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="mb-24 text-center md:text-left">
           <FadeIn>
             <span className="text-secondary font-bold uppercase tracking-widest text-xs mb-4 block">
-              360° Hizmet Portföyü
+              {SERVICES_COPY.badge[lang]}
             </span>
             <h2 className="text-h2-d font-serif font-bold text-primary max-w-3xl">
-              İşinizin Her Alanında <br/>Profesyonel Çözümler
+              {SERVICES_COPY.titleLine1[lang]} <br/>{SERVICES_COPY.titleLine2[lang]}
             </h2>
           </FadeIn>
         </div>
@@ -26,15 +29,15 @@ export const Services: React.FC = () => {
                    <div>
                      <h3 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4 flex items-center gap-4">
                        <span className="w-8 h-1 bg-secondary block"></span>
-                       {category.title}
+                       {category.title[lang]}
                      </h3>
                      <p className="text-slate-600 max-w-2xl text-lg font-light pl-12">
-                       {category.description}
+                       {category.description[lang]}
                      </p>
                    </div>
                    <div className="mt-6 md:mt-0 hidden md:block">
                      <span className="text-xs font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-4 py-2 rounded-full">
-                       {category.items.length} Hizmet Başlığı
+                       {category.items.length} {SERVICES_COPY.countBadge[lang]}
                      </span>
                    </div>
                 </div>
@@ -49,10 +52,10 @@ export const Services: React.FC = () => {
                           <service.icon size={28} strokeWidth={1.5} />
                         </div>
                         <h4 className="text-xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
-                          {service.title}
+                          {service.title[lang]}
                         </h4>
                         <p className="text-slate-600 leading-relaxed mb-8 font-light text-sm">
-                          {service.description}
+                          {service.description[lang]}
                         </p>
                       </div>
                       
@@ -60,7 +63,7 @@ export const Services: React.FC = () => {
                         href={service.link}
                         className="inline-flex items-center text-xs font-bold text-primary group-hover:text-secondary transition-colors mt-auto uppercase tracking-widest"
                       >
-                        Detayları İncele
+                        {SERVICES_COPY.viewDetails[lang]}
                         <ArrowRight size={14} className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
                         <span className="absolute inset-0"></span> {/* Stretched link */}
                       </a>

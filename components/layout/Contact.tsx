@@ -1,10 +1,12 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FadeIn } from '../common/FadeIn';
 import { MessageCircle, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { trackEvent } from '../../lib/analytics';
+import { useLanguage } from '../../lib/useLanguage';
+import { CONTACT_FORM_COPY, CONTACT_CONFIG } from '../../constants';
 
 export const Contact: React.FC = () => {
+  const { lang } = useLanguage();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -13,6 +15,28 @@ export const Contact: React.FC = () => {
   });
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
+
+  // Listen for service selection from Services component
+  useEffect(() => {
+    const handleServiceSelection = (e: CustomEvent) => {
+      if (e.detail) {
+        setFormData(prev => ({ ...prev, subject: `${e.detail}` }));
+      }
+    };
+
+    window.addEventListener('serviceSelected', handleServiceSelection as EventListener);
+    
+    // Check URL params on mount
+    const urlParams = new URLSearchParams(window.location.search);
+    const subjectParam = urlParams.get('subject');
+    if (subjectParam) {
+      setFormData(prev => ({ ...prev, subject: subjectParam }));
+    }
+
+    return () => {
+      window.removeEventListener('serviceSelected', handleServiceSelection as EventListener);
+    };
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }));
@@ -23,12 +47,12 @@ export const Contact: React.FC = () => {
     
     // Basic Validation
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
-      setErrorMessage('Lütfen tüm alanları doldurunuz.');
+      setErrorMessage(lang === 'tr' ? 'Lütfen tüm alanları doldurunuz.' : 'Please fill in all fields.');
       setStatus('error');
       return;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      setErrorMessage('Lütfen geçerli bir e-posta adresi giriniz.');
+      setErrorMessage(lang === 'tr' ? 'Lütfen geçerli bir e-posta adresi giriniz.' : 'Please enter a valid email address.');
       setStatus('error');
       return;
     }
@@ -46,7 +70,7 @@ export const Contact: React.FC = () => {
     } catch (err) {
       trackEvent('Contact', 'Form Submit', 'Error');
       setStatus('error');
-      setErrorMessage('Bir sorun oluştu, lütfen daha sonra tekrar deneyiniz.');
+      setErrorMessage(CONTACT_FORM_COPY.errorMsg[lang]);
     }
   };
 
@@ -57,32 +81,32 @@ export const Contact: React.FC = () => {
           <FadeIn>
             <div>
               <h2 id="contact-heading" className="text-h2-d font-serif font-bold text-primary mb-8">
-                Birlikte Geleceği <br/>İnşa Edelim
+                {CONTACT_FORM_COPY.title[lang]}
               </h2>
               <p className="text-slate-600 text-lg mb-12 leading-relaxed font-light">
-                Stratejik hedeflerinize ulaşmak için ilk adımı atın. Uzman ekibimiz, ihtiyaçlarınızı dinlemek ve size özel çözümler sunmak için hazır.
+                {CONTACT_FORM_COPY.description[lang]}
               </p>
               
               <div className="space-y-10 border-t border-slate-100 pt-10">
                 <div>
-                  <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Genel Merkez</h4>
-                  <p className="text-primary text-xl font-serif">Büyükdere Cad. No:123, Levent, İstanbul</p>
+                  <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">{CONTACT_FORM_COPY.headquarters[lang]}</h4>
+                  <p className="text-primary text-xl font-serif">{CONTACT_CONFIG.address[lang]}</p>
                 </div>
                 <div className="grid grid-cols-2 gap-8">
                   <div>
-                    <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">E-posta</h4>
-                    <a href="mailto:info@ecypro.com" className="text-primary text-lg hover:text-secondary transition-colors">info@ecypro.com</a>
+                    <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">{CONTACT_FORM_COPY.emailLabel[lang]}</h4>
+                    <a href={`mailto:${CONTACT_CONFIG.email}`} className="text-primary text-lg hover:text-secondary transition-colors">{CONTACT_CONFIG.email}</a>
                   </div>
                   <div>
-                    <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Telefon</h4>
-                    <a href="tel:+902125550123" className="text-primary text-lg hover:text-secondary transition-colors">+90 (212) 555 0123</a>
+                    <h4 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">{CONTACT_FORM_COPY.phoneLabel[lang]}</h4>
+                    <a href={`tel:${CONTACT_CONFIG.phone}`} className="text-primary text-lg hover:text-secondary transition-colors">{CONTACT_CONFIG.phoneDisplay}</a>
                   </div>
                 </div>
                 
                 <div className="pt-6">
-                  <a href="https://wa.me/905555555555" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('Contact', 'WhatsApp Click')} className="inline-flex items-center gap-3 px-6 py-3 bg-[#25D366] text-white rounded-lg font-bold shadow-sm hover:shadow-md hover:bg-[#20bd5a] transition-all">
+                  <a href={CONTACT_CONFIG.whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('Contact', 'WhatsApp Click')} className="inline-flex items-center gap-3 px-6 py-3 bg-[#25D366] text-white rounded-lg font-bold shadow-sm hover:shadow-md hover:bg-[#20bd5a] transition-all">
                     <MessageCircle size={20} />
-                    WhatsApp'tan Ulaşın
+                    {CONTACT_FORM_COPY.whatsapp[lang]}
                   </a>
                 </div>
               </div>
@@ -93,15 +117,15 @@ export const Contact: React.FC = () => {
             <div className="bg-neutral p-10 md:p-14 rounded-3xl shadow-sm border border-slate-100">
               <p className="text-sm font-bold text-secondary uppercase tracking-widest mb-6 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-green-500"></span>
-                24 Saat İçinde Dönüş Yapıyoruz
+                {CONTACT_FORM_COPY.responsePromise[lang]}
               </p>
               
               {status === 'success' ? (
                 <div className="bg-green-50 border border-green-200 rounded-xl p-8 text-center animate-in fade-in">
                   <CheckCircle size={48} className="text-green-500 mx-auto mb-4" />
-                  <h3 className="text-xl font-bold text-green-800 mb-2">Mesajınız Alındı!</h3>
-                  <p className="text-green-700">En kısa sürede size dönüş yapacağız.</p>
-                  <button onClick={() => setStatus('idle')} className="mt-6 text-sm font-bold text-green-600 hover:underline">Yeni mesaj gönder</button>
+                  <h3 className="text-xl font-bold text-green-800 mb-2">{CONTACT_FORM_COPY.successTitle[lang]}</h3>
+                  <p className="text-green-700">{CONTACT_FORM_COPY.successDesc[lang]}</p>
+                  <button onClick={() => setStatus('idle')} className="mt-6 text-sm font-bold text-green-600 hover:underline">{CONTACT_FORM_COPY.newMsg[lang]}</button>
                 </div>
               ) : (
                 <form className="space-y-6" onSubmit={handleSubmit} noValidate>
@@ -120,7 +144,7 @@ export const Contact: React.FC = () => {
                         value={formData.name}
                         onChange={handleChange}
                         className="peer w-full bg-white border border-slate-200 rounded-lg px-4 pt-6 pb-2 text-primary focus:outline-none focus:ring-1 focus:ring-secondary focus:border-secondary transition-all shadow-sm placeholder-transparent disabled:opacity-50"
-                        placeholder="Ad Soyad"
+                        placeholder={CONTACT_FORM_COPY.placeholders.name[lang]}
                         disabled={status === 'submitting'}
                         required
                       />
@@ -128,7 +152,7 @@ export const Contact: React.FC = () => {
                         htmlFor="name"
                         className="absolute left-4 top-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[10px] peer-focus:text-secondary"
                       >
-                        Adınız
+                        {CONTACT_FORM_COPY.labels.name[lang]}
                       </label>
                     </div>
                     <div className="group relative">
@@ -138,7 +162,7 @@ export const Contact: React.FC = () => {
                         value={formData.email}
                         onChange={handleChange}
                         className="peer w-full bg-white border border-slate-200 rounded-lg px-4 pt-6 pb-2 text-primary focus:outline-none focus:ring-1 focus:ring-secondary focus:border-secondary transition-all shadow-sm placeholder-transparent disabled:opacity-50"
-                        placeholder="ornek@sirket.com"
+                        placeholder={CONTACT_FORM_COPY.placeholders.email[lang]}
                         disabled={status === 'submitting'}
                         required
                       />
@@ -146,7 +170,7 @@ export const Contact: React.FC = () => {
                         htmlFor="email"
                         className="absolute left-4 top-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[10px] peer-focus:text-secondary"
                       >
-                        E-posta
+                        {CONTACT_FORM_COPY.labels.email[lang]}
                       </label>
                     </div>
                   </div>
@@ -158,7 +182,7 @@ export const Contact: React.FC = () => {
                       value={formData.subject}
                       onChange={handleChange}
                       className="peer w-full bg-white border border-slate-200 rounded-lg px-4 pt-6 pb-2 text-primary focus:outline-none focus:ring-1 focus:ring-secondary focus:border-secondary transition-all shadow-sm placeholder-transparent disabled:opacity-50"
-                      placeholder="Konu"
+                      placeholder={CONTACT_FORM_COPY.placeholders.subject[lang]}
                       disabled={status === 'submitting'}
                       required
                     />
@@ -166,7 +190,7 @@ export const Contact: React.FC = () => {
                       htmlFor="subject"
                       className="absolute left-4 top-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[10px] peer-focus:text-secondary"
                     >
-                      Konu
+                       {CONTACT_FORM_COPY.labels.subject[lang]}
                     </label>
                   </div>
 
@@ -177,7 +201,7 @@ export const Contact: React.FC = () => {
                       value={formData.message}
                       onChange={handleChange}
                       className="peer w-full bg-white border border-slate-200 rounded-lg px-4 pt-6 pb-2 text-primary focus:outline-none focus:ring-1 focus:ring-secondary focus:border-secondary transition-all resize-none shadow-sm placeholder-transparent disabled:opacity-50"
-                      placeholder="Mesajınız"
+                      placeholder={CONTACT_FORM_COPY.placeholders.message[lang]}
                       disabled={status === 'submitting'}
                       required
                     ></textarea>
@@ -185,7 +209,7 @@ export const Contact: React.FC = () => {
                       htmlFor="message"
                       className="absolute left-4 top-2 text-[10px] font-bold text-slate-400 uppercase tracking-wider transition-all peer-placeholder-shown:text-xs peer-placeholder-shown:text-slate-500 peer-placeholder-shown:top-4 peer-focus:top-2 peer-focus:text-[10px] peer-focus:text-secondary"
                     >
-                      Mesajınız
+                      {CONTACT_FORM_COPY.labels.message[lang]}
                     </label>
                   </div>
 
@@ -196,9 +220,9 @@ export const Contact: React.FC = () => {
                   >
                     {status === 'submitting' ? (
                       <>
-                        <Loader2 className="animate-spin" size={20} /> Gönderiliyor...
+                        <Loader2 className="animate-spin" size={20} /> {CONTACT_FORM_COPY.submitting[lang]}
                       </>
-                    ) : 'Gönder'}
+                    ) : CONTACT_FORM_COPY.send[lang]}
                   </button>
                 </form>
               )}

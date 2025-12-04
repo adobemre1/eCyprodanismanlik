@@ -1,12 +1,9 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown, ChevronUp, Phone, Globe } from 'lucide-react';
 import { NAV_ITEMS, CONTACT_CONFIG } from '../../constants';
 import { useScrollToSection } from '../common/useScrollToSection';
 import { trackEvent } from '../../lib/analytics';
-import { NavItem } from '../../types';
-
-type Language = 'tr' | 'en';
+import { useLanguage } from '../../lib/useLanguage';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,20 +11,16 @@ export const Navbar: React.FC = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const [activeSection, setActiveSection] = useState<string>('');
-  const [lang, setLang] = useState<Language>('tr');
+  
+  // Use global language hook
+  const { lang, setLanguage } = useLanguage();
+  
   const dropdownTimeoutRef = useRef<number | null>(null);
   const scrollToSection = useScrollToSection();
 
-  // Load language preference
-  useEffect(() => {
-    const savedLang = localStorage.getItem('ecypro_lang') as Language;
-    if (savedLang) setLang(savedLang);
-  }, []);
-
   const toggleLanguage = () => {
     const newLang = lang === 'tr' ? 'en' : 'tr';
-    setLang(newLang);
-    localStorage.setItem('ecypro_lang', newLang);
+    setLanguage(newLang);
     trackEvent('Navbar', 'Change Language', newLang);
   };
 

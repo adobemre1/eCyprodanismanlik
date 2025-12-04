@@ -1,8 +1,11 @@
 import React from 'react';
 import { FadeIn } from '../common/FadeIn';
-import { TRUST_LOGOS } from '../../constants';
+import { TRUST_LOGOS, TRUSTBAR_COPY } from '../../constants';
+import { useLanguage } from '../../lib/useLanguage';
 
 export const TrustBar: React.FC = () => {
+  const { lang } = useLanguage();
+
   // Simulating distinct logos for different industries
   const renderLogo = (id: string, className: string) => {
     switch (id) {
@@ -66,21 +69,21 @@ export const TrustBar: React.FC = () => {
         <FadeIn>
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-16">
             <p className="text-xs font-bold text-slate-400 uppercase tracking-[0.2em] whitespace-nowrap pt-2">
-              Global İş Ortaklarımız
+              {TRUSTBAR_COPY.sectionTitle[lang]}
             </p>
             <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center justify-items-center opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
                {TRUST_LOGOS.map((logo) => (
-                 <div key={logo.id} className="group relative flex justify-center w-full cursor-default" title={logo.alt}>
+                 <div key={logo.id} className="group relative flex justify-center w-full cursor-default" title={logo.alt[lang]}>
                     {renderLogo(logo.id, "text-slate-800 group-hover:text-primary transition-colors h-8 w-auto")}
                     
                     {/* Tooltip for Sector */}
                     <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
                        <span className="text-[10px] font-bold text-secondary bg-white border border-slate-100 px-2 py-1 rounded shadow-sm">
-                         {logo.sector}
+                         {logo.sector[lang]}
                        </span>
                     </div>
 
-                    <span className="sr-only">{logo.name} - {logo.sector}</span>
+                    <span className="sr-only">{logo.name} - {logo.sector[lang]}</span>
                  </div>
                ))}
             </div>

@@ -1,15 +1,42 @@
-
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { SERVICE_CATEGORIES, FALLBACK_MESSAGES } from '../../constants';
+import { SERVICE_CATEGORIES, FALLBACK_MESSAGES, SERVICES_COPY } from '../../constants';
 import { FadeIn } from '../common/FadeIn';
 import { trackEvent } from '../../lib/analytics';
+import { useLanguage } from '../../lib/useLanguage';
 
 export const Services: React.FC = () => {
+  const { lang } = useLanguage();
+
+  const handleServiceClick = (e: React.MouseEvent, title: string) => {
+    e.preventDefault();
+    trackEvent('Services', 'Click Card', title);
+    
+    // Update URL with subject parameter
+    const url = new URL(window.location.href);
+    url.searchParams.set('subject', title);
+    window.history.pushState({}, '', url.toString());
+    
+    // Dispatch a custom event so Contact component can pick it up
+    window.dispatchEvent(new CustomEvent('serviceSelected', { detail: title }));
+    
+    // Scroll to contact section
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      const headerOffset = 96;
+      const elementPosition = contactSection.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   if (!SERVICE_CATEGORIES || SERVICE_CATEGORIES.length === 0) {
     return (
       <section className="py-24 bg-neutral text-center text-slate-500">
-        <p>{FALLBACK_MESSAGES.EMPTY_LIST}</p>
+        <p>{FALLBACK_MESSAGES.EMPTY_LIST[lang]}</p>
       </section>
     );
   }
@@ -20,10 +47,10 @@ export const Services: React.FC = () => {
         <div className="mb-24 text-center md:text-left">
           <FadeIn>
             <span className="text-secondary font-bold uppercase tracking-widest text-xs mb-4 block">
-              360° Hizmet Portföyü
+              {SERVICES_COPY.badge[lang]}
             </span>
             <h2 id="services-heading" className="text-h2-d font-serif font-bold text-primary max-w-3xl">
-              İşinizin Her Alanında <br/>Profesyonel Çözümler
+              {SERVICES_COPY.titleLine1[lang]} <br/>{SERVICES_COPY.titleLine2[lang]}
             </h2>
           </FadeIn>
         </div>
@@ -36,15 +63,15 @@ export const Services: React.FC = () => {
                    <div>
                      <h3 id={`${category.id}-title`} className="text-3xl md:text-4xl font-serif font-bold text-primary mb-4 flex items-center gap-4">
                        <span className="w-8 h-1 bg-secondary block"></span>
-                       {category.title}
+                       {category.title[lang]}
                      </h3>
                      <p className="text-slate-600 max-w-2xl text-lg font-light pl-12">
-                       {category.description}
+                       {category.description[lang]}
                      </p>
                    </div>
                    <div className="mt-6 md:mt-0 hidden md:block">
                      <span className="text-xs font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-4 py-2 rounded-full">
-                       {category.items.length} Hizmet Başlığı
+                       {category.items.length} {SERVICES_COPY.countBadge[lang]}
                      </span>
                    </div>
                 </div>
@@ -59,19 +86,19 @@ export const Services: React.FC = () => {
                           <service.icon size={28} strokeWidth={1.5} />
                         </div>
                         <h4 className="text-xl font-bold text-primary mb-4 group-hover:text-secondary transition-colors">
-                          {service.title}
+                          {service.title[lang]}
                         </h4>
                         <p className="text-slate-600 leading-relaxed mb-8 font-light text-sm">
-                          {service.description}
+                          {service.description[lang]}
                         </p>
                       </div>
                       
                       <a
                         href={service.link}
-                        onClick={() => trackEvent('Services', 'Click Card', service.title)}
+                        onClick={(e) => handleServiceClick(e, service.title[lang])}
                         className="inline-flex items-center text-xs font-bold text-primary group-hover:text-secondary transition-colors mt-auto uppercase tracking-widest outline-none focus:text-secondary"
                       >
-                        Detayları İncele
+                        {SERVICES_COPY.viewDetails[lang]}
                         <ArrowRight size={14} className="ml-2 transition-transform duration-300 group-hover:translate-x-2" />
                         <span className="absolute inset-0"></span>
                       </a>

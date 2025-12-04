@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, ShieldCheck } from 'lucide-react';
 import { FadeIn } from '../common/FadeIn';
@@ -6,9 +5,11 @@ import { useScrollToSection } from '../common/useScrollToSection';
 import { trackEvent } from '../../lib/analytics';
 import { HERO_CONTENT } from '../../constants';
 import { HeroPattern } from './HeroPattern';
+import { useLanguage } from '../../lib/useLanguage';
 
 export const Hero: React.FC = () => {
   const scrollToSection = useScrollToSection();
+  const { lang } = useLanguage();
 
   const handleCtaClick = (e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>, href: string, label: string) => {
     trackEvent('Hero', 'Click', label);
@@ -29,24 +30,24 @@ export const Hero: React.FC = () => {
             <div className="inline-flex items-center space-x-3 bg-white border border-slate-200 rounded-full px-5 py-2 mb-10 shadow-sm">
               <ShieldCheck size={16} className="text-secondary" />
               <span className="text-xs font-bold uppercase tracking-widest text-primary">
-                {HERO_CONTENT.badge}
+                {HERO_CONTENT.badge[lang]}
               </span>
             </div>
           </FadeIn>
           
           <FadeIn delay={200}>
             <h1 className="font-serif text-hero-m md:text-hero-d font-bold text-primary leading-[1.1] mb-8 tracking-tight">
-              {HERO_CONTENT.title.line1} <br />
+              {HERO_CONTENT.title.line1[lang]} <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-orange-600">
-                {HERO_CONTENT.title.highlight}
+                {HERO_CONTENT.title.highlight[lang]}
               </span>
-              <br /> {HERO_CONTENT.title.line2}
+              <br /> {HERO_CONTENT.title.line2[lang]}
             </h1>
           </FadeIn>
 
           <FadeIn delay={400}>
             <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mb-12 font-light">
-              {HERO_CONTENT.description}
+              {HERO_CONTENT.description[lang]}
             </p>
           </FadeIn>
 
@@ -57,14 +58,14 @@ export const Hero: React.FC = () => {
                 onClick={(e) => handleCtaClick(e, HERO_CONTENT.primaryCta.href, 'Primary CTA')}
                 className="inline-flex justify-center items-center px-10 py-4 bg-primary text-white text-sm font-bold uppercase tracking-widest rounded-lg hover:bg-slate-800 transition-all shadow-lg hover:shadow-primary/30 transform hover:-translate-y-1 outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
               >
-                {HERO_CONTENT.primaryCta.label}
+                {HERO_CONTENT.primaryCta.label[lang]}
               </a>
               <a
                 href={HERO_CONTENT.secondaryCta.href}
                 onClick={(e) => handleCtaClick(e, HERO_CONTENT.secondaryCta.href, 'Secondary CTA')}
                 className="inline-flex justify-center items-center px-10 py-4 border border-slate-300 text-slate-700 text-sm font-bold uppercase tracking-widest rounded-lg hover:bg-white hover:border-secondary hover:text-secondary transition-all group bg-transparent outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
               >
-                {HERO_CONTENT.secondaryCta.label}
+                {HERO_CONTENT.secondaryCta.label[lang]}
                 <ArrowRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
               </a>
             </div>
@@ -77,7 +78,7 @@ export const Hero: React.FC = () => {
                   <a 
                     key={pillar.id}
                     href={pillar.href} 
-                    onClick={(e) => handleCtaClick(e, pillar.href, `Pillar: ${pillar.title}`)} 
+                    onClick={(e) => handleCtaClick(e, pillar.href, `Pillar: ${pillar.title[lang]}`)} 
                     className="group flex items-center p-2 transition-all outline-none focus:bg-white rounded-lg" 
                     role="listitem"
                   >
@@ -85,8 +86,8 @@ export const Hero: React.FC = () => {
                       <pillar.icon size={20} />
                     </div>
                     <div>
-                      <span className="block text-sm font-bold text-primary group-hover:text-secondary transition-colors">{pillar.title}</span>
-                      <span className="text-xs text-slate-500">{pillar.subtitle}</span>
+                      <span className="block text-sm font-bold text-primary group-hover:text-secondary transition-colors">{pillar.title[lang]}</span>
+                      <span className="text-xs text-slate-500">{pillar.subtitle[lang]}</span>
                     </div>
                   </a>
                 ))}
